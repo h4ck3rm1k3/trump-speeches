@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>You</word>
+            <lemma>you</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>PRP</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="2">
+            <word>know</word>
+            <lemma>know</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>8</CharacterOffsetEnd>
+            <POS>VBP</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="3">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>8</CharacterOffsetBegin>
+            <CharacterOffsetEnd>9</CharacterOffsetEnd>
+            <POS>,</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="4">
+            <word>if</word>
+            <lemma>if</lemma>
+            <CharacterOffsetBegin>10</CharacterOffsetBegin>
+            <CharacterOffsetEnd>12</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="5">
+            <word>that</word>
+            <lemma>that</lemma>
+            <CharacterOffsetBegin>13</CharacterOffsetBegin>
+            <CharacterOffsetEnd>17</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="6">
+            <word>industry</word>
+            <lemma>industry</lemma>
+            <CharacterOffsetBegin>18</CharacterOffsetBegin>
+            <CharacterOffsetEnd>26</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="7">
+            <word>is</word>
+            <lemma>be</lemma>
+            <CharacterOffsetBegin>27</CharacterOffsetBegin>
+            <CharacterOffsetEnd>29</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="8">
+            <word>upset</word>
+            <lemma>upset</lemma>
+            <CharacterOffsetBegin>30</CharacterOffsetBegin>
+            <CharacterOffsetEnd>35</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="9">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>35</CharacterOffsetBegin>
+            <CharacterOffsetEnd>36</CharacterOffsetEnd>
+            <POS>,</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="10">
+            <word>Iowa</word>
+            <lemma>Iowa</lemma>
+            <CharacterOffsetBegin>37</CharacterOffsetBegin>
+            <CharacterOffsetEnd>41</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>LOCATION</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="11">
+            <word>'s</word>
+            <lemma>'s</lemma>
+            <CharacterOffsetBegin>41</CharacterOffsetBegin>
+            <CharacterOffsetEnd>43</CharacterOffsetEnd>
+            <POS>POS</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="12">
+            <word>got</word>
+            <lemma>get</lemma>
+            <CharacterOffsetBegin>44</CharacterOffsetBegin>
+            <CharacterOffsetEnd>47</CharacterOffsetEnd>
+            <POS>VBD</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="13">
+            <word>problems</word>
+            <lemma>problem</lemma>
+            <CharacterOffsetBegin>48</CharacterOffsetBegin>
+            <CharacterOffsetEnd>56</CharacterOffsetEnd>
+            <POS>NNS</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="14">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>56</CharacterOffsetBegin>
+            <CharacterOffsetEnd>57</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (S (NP (PRP You)) (VP (VP (VBP know)) (, ,) (SBAR (IN if) (S (NP (DT that) (NN industry)) (VP (VBZ is) (ADJP (JJ upset))))))) (, ,) (NP (NNP Iowa) (POS 's)) (VP (VBD got) (NP (NNS problems))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="12">got</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="2">know</governor>
+            <dependent idx="1">You</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="12">got</governor>
+            <dependent idx="2">know</dependent>
+          </dep>
+          <dep type="mark">
+            <governor idx="8">upset</governor>
+            <dependent idx="4">if</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="6">industry</governor>
+            <dependent idx="5">that</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="8">upset</governor>
+            <dependent idx="6">industry</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="8">upset</governor>
+            <dependent idx="7">is</dependent>
+          </dep>
+          <dep type="advcl">
+            <governor idx="2">know</governor>
+            <dependent idx="8">upset</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="12">got</governor>
+            <dependent idx="10">Iowa</dependent>
+          </dep>
+          <dep type="possessive">
+            <governor idx="10">Iowa</governor>
+            <dependent idx="11">'s</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="12">got</governor>
+            <dependent idx="13">problems</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="12">got</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="2">know</governor>
+            <dependent idx="1">You</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="12">got</governor>
+            <dependent idx="2">know</dependent>
+          </dep>
+          <dep type="mark">
+            <governor idx="8">upset</governor>
+            <dependent idx="4">if</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="6">industry</governor>
+            <dependent idx="5">that</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="8">upset</governor>
+            <dependent idx="6">industry</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="8">upset</governor>
+            <dependent idx="7">is</dependent>
+          </dep>
+          <dep type="advcl">
+            <governor idx="2">know</governor>
+            <dependent idx="8">upset</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="12">got</governor>
+            <dependent idx="10">Iowa</dependent>
+          </dep>
+          <dep type="possessive">
+            <governor idx="10">Iowa</governor>
+            <dependent idx="11">'s</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="12">got</governor>
+            <dependent idx="13">problems</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="12">got</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="2">know</governor>
+            <dependent idx="1">You</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="12">got</governor>
+            <dependent idx="2">know</dependent>
+          </dep>
+          <dep type="mark">
+            <governor idx="8">upset</governor>
+            <dependent idx="4">if</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="6">industry</governor>
+            <dependent idx="5">that</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="8">upset</governor>
+            <dependent idx="6">industry</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="8">upset</governor>
+            <dependent idx="7">is</dependent>
+          </dep>
+          <dep type="advcl">
+            <governor idx="2">know</governor>
+            <dependent idx="8">upset</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="12">got</governor>
+            <dependent idx="10">Iowa</dependent>
+          </dep>
+          <dep type="possessive">
+            <governor idx="10">Iowa</governor>
+            <dependent idx="11">'s</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="12">got</governor>
+            <dependent idx="13">problems</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

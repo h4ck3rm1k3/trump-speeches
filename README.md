@@ -19,3 +19,11 @@ python trump_wordcloud.py
 
 ## License
 Copyright Disclaimer Under Section 107 of the Copyright Act 1976, allowance is made for "fair use" for purposes such as criticism, comment, news reporting, teaching, scholarship, and research. Fair use is a use permitted by copyright statute that might otherwise be infringing. Non-profit, educational or personal use tips the balance in favor of fair use
+
+## CoreNLP Annotations
+
+`corenlp-output` contains annotations applied by CoreNLP 3.3.0. The annotations were made on fake documents: the original speeches.txt, broken up by line 
+breaks. 
+
+Anything sentential should hold ok, but coreference will be broken across 
+paragraphs.

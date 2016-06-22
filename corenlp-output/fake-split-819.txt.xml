@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Thank</word>
+            <lemma>thank</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>5</CharacterOffsetEnd>
+            <POS>VB</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="2">
+            <word>you</word>
+            <lemma>you</lemma>
+            <CharacterOffsetBegin>6</CharacterOffsetBegin>
+            <CharacterOffsetEnd>9</CharacterOffsetEnd>
+            <POS>PRP</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="3">
+            <word>for</word>
+            <lemma>for</lemma>
+            <CharacterOffsetBegin>10</CharacterOffsetBegin>
+            <CharacterOffsetEnd>13</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="4">
+            <word>joining</word>
+            <lemma>join</lemma>
+            <CharacterOffsetBegin>14</CharacterOffsetBegin>
+            <CharacterOffsetEnd>21</CharacterOffsetEnd>
+            <POS>VBG</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="5">
+            <word>me</word>
+            <lemma>I</lemma>
+            <CharacterOffsetBegin>22</CharacterOffsetBegin>
+            <CharacterOffsetEnd>24</CharacterOffsetEnd>
+            <POS>PRP</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="6">
+            <word>today</word>
+            <lemma>today</lemma>
+            <CharacterOffsetBegin>25</CharacterOffsetBegin>
+            <CharacterOffsetEnd>30</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>DATE</NER>
+            <NormalizedNER>THIS P1D</NormalizedNER>
+            <Speaker>PER0</Speaker>
+            <Timex tid="t1" type="DATE"/>
+          </token>
+          <token id="7">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>30</CharacterOffsetBegin>
+            <CharacterOffsetEnd>31</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (VP (VB Thank) (NP (PRP you)) (PP (IN for) (S (VP (VBG joining) (NP (PRP me)) (NP-TMP (NN today)))))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">Thank</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">Thank</governor>
+            <dependent idx="2">you</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="1">Thank</governor>
+            <dependent idx="3">for</dependent>
+          </dep>
+          <dep type="pcomp">
+            <governor idx="3">for</governor>
+            <dependent idx="4">joining</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="4">joining</governor>
+            <dependent idx="5">me</dependent>
+          </dep>
+          <dep type="tmod">
+            <governor idx="4">joining</governor>
+            <dependent idx="6">today</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">Thank</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">Thank</governor>
+            <dependent idx="2">you</dependent>
+          </dep>
+          <dep type="prepc_for">
+            <governor idx="1">Thank</governor>
+            <dependent idx="4">joining</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="4">joining</governor>
+            <dependent idx="5">me</dependent>
+          </dep>
+          <dep type="tmod">
+            <governor idx="4">joining</governor>
+            <dependent idx="6">today</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">Thank</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">Thank</governor>
+            <dependent idx="2">you</dependent>
+          </dep>
+          <dep type="prepc_for">
+            <governor idx="1">Thank</governor>
+            <dependent idx="4">joining</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="4">joining</governor>
+            <dependent idx="5">me</dependent>
+          </dep>
+          <dep type="tmod">
+            <governor idx="4">joining</governor>
+            <dependent idx="6">today</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

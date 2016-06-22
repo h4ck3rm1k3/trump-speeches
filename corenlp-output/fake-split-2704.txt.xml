@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>We</word>
+            <lemma>we</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>2</CharacterOffsetEnd>
+            <POS>PRP</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="2">
+            <word>have</word>
+            <lemma>have</lemma>
+            <CharacterOffsetBegin>3</CharacterOffsetBegin>
+            <CharacterOffsetEnd>7</CharacterOffsetEnd>
+            <POS>VBP</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="3">
+            <word>now</word>
+            <lemma>now</lemma>
+            <CharacterOffsetBegin>8</CharacterOffsetBegin>
+            <CharacterOffsetEnd>11</CharacterOffsetEnd>
+            <POS>RB</POS>
+            <NER>DATE</NER>
+            <NormalizedNER>PRESENT_REF</NormalizedNER>
+            <Speaker>PER0</Speaker>
+            <Timex tid="t1" type="DATE">PRESENT_REF</Timex>
+          </token>
+          <token id="4">
+            <word>migrations</word>
+            <lemma>migration</lemma>
+            <CharacterOffsetBegin>12</CharacterOffsetBegin>
+            <CharacterOffsetEnd>22</CharacterOffsetEnd>
+            <POS>NNS</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="5">
+            <word>largely</word>
+            <lemma>largely</lemma>
+            <CharacterOffsetBegin>23</CharacterOffsetBegin>
+            <CharacterOffsetEnd>30</CharacterOffsetEnd>
+            <POS>RB</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="6">
+            <word>because</word>
+            <lemma>because</lemma>
+            <CharacterOffsetBegin>31</CharacterOffsetBegin>
+            <CharacterOffsetEnd>38</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="7">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>39</CharacterOffsetBegin>
+            <CharacterOffsetEnd>41</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="8">
+            <word>what</word>
+            <lemma>what</lemma>
+            <CharacterOffsetBegin>42</CharacterOffsetBegin>
+            <CharacterOffsetEnd>46</CharacterOffsetEnd>
+            <POS>WP</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="9">
+            <word>'s</word>
+            <lemma>be</lemma>
+            <CharacterOffsetBegin>46</CharacterOffsetBegin>
+            <CharacterOffsetEnd>48</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="10">
+            <word>happened</word>
+            <lemma>happen</lemma>
+            <CharacterOffsetBegin>49</CharacterOffsetBegin>
+            <CharacterOffsetEnd>57</CharacterOffsetEnd>
+            <POS>VBN</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="11">
+            <word>afterwards</word>
+            <lemma>afterwards</lemma>
+            <CharacterOffsetBegin>58</CharacterOffsetBegin>
+            <CharacterOffsetEnd>68</CharacterOffsetEnd>
+            <POS>RB</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="12">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>68</CharacterOffsetBegin>
+            <CharacterOffsetEnd>69</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (PRP We)) (VP (VBP have) (NP (RB now) (NNS migrations)) (PP (ADVP (RB largely)) (IN because) (IN of) (SBAR (WHNP (WP what)) (S (VP (VBZ 's) (VP (VBN happened) (ADVP (RB afterwards)))))))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">have</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="2">have</governor>
+            <dependent idx="1">We</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="4">migrations</governor>
+            <dependent idx="3">now</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="2">have</governor>
+            <dependent idx="4">migrations</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="7">of</governor>
+            <dependent idx="5">largely</dependent>
+          </dep>
+          <dep type="mwe">
+            <governor idx="7">of</governor>
+            <dependent idx="6">because</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="2">have</governor>
+            <dependent idx="7">of</dependent>
+          </dep>
+          <dep type="nsubjpass">
+            <governor idx="10">happened</governor>
+            <dependent idx="8">what</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="10">happened</governor>
+            <dependent idx="9">'s</dependent>
+          </dep>
+          <dep type="pcomp">
+            <governor idx="7">of</governor>
+            <dependent idx="10">happened</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="10">happened</governor>
+            <dependent idx="11">afterwards</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">have</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="2">have</governor>
+            <dependent idx="1">We</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="4">migrations</governor>
+            <dependent idx="3">now</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="2">have</governor>
+            <dependent idx="4">migrations</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="2">have</governor>
+            <dependent idx="5">largely</dependent>
+          </dep>
+          <dep type="nsubjpass">
+            <governor idx="10">happened</governor>
+            <dependent idx="8">what</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="10">happened</governor>
+            <dependent idx="9">'s</dependent>
+          </dep>
+          <dep type="prepc_because_of">
+            <governor idx="2">have</governor>
+            <dependent idx="10">happened</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="10">happened</governor>
+            <dependent idx="11">afterwards</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">have</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="2">have</governor>
+            <dependent idx="1">We</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="4">migrations</governor>
+            <dependent idx="3">now</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="2">have</governor>
+            <dependent idx="4">migrations</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="2">have</governor>
+            <dependent idx="5">largely</dependent>
+          </dep>
+          <dep type="nsubjpass">
+            <governor idx="10">happened</governor>
+            <dependent idx="8">what</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="10">happened</governor>
+            <dependent idx="9">'s</dependent>
+          </dep>
+          <dep type="prepc_because_of">
+            <governor idx="2">have</governor>
+            <dependent idx="10">happened</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="10">happened</governor>
+            <dependent idx="11">afterwards</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

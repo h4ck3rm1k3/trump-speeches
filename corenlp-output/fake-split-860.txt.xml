@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>All</word>
+            <lemma>all</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="2">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>6</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="3">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>7</CharacterOffsetBegin>
+            <CharacterOffsetEnd>10</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="4">
+            <word>September</word>
+            <lemma>September</lemma>
+            <CharacterOffsetBegin>11</CharacterOffsetBegin>
+            <CharacterOffsetEnd>20</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>DATE</NER>
+            <NormalizedNER>XXXX-09-11</NormalizedNER>
+            <Speaker>PER0</Speaker>
+            <Timex tid="t1" type="DATE">XXXX-09-11</Timex>
+          </token>
+          <token id="5">
+            <word>11th</word>
+            <lemma>11th</lemma>
+            <CharacterOffsetBegin>21</CharacterOffsetBegin>
+            <CharacterOffsetEnd>25</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>DATE</NER>
+            <NormalizedNER>XXXX-09-11</NormalizedNER>
+            <Speaker>PER0</Speaker>
+            <Timex tid="t1" type="DATE">XXXX-09-11</Timex>
+          </token>
+          <token id="6">
+            <word>hijackers</word>
+            <lemma>hijacker</lemma>
+            <CharacterOffsetBegin>26</CharacterOffsetBegin>
+            <CharacterOffsetEnd>35</CharacterOffsetEnd>
+            <POS>NNS</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="7">
+            <word>were</word>
+            <lemma>be</lemma>
+            <CharacterOffsetBegin>36</CharacterOffsetBegin>
+            <CharacterOffsetEnd>40</CharacterOffsetEnd>
+            <POS>VBD</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="8">
+            <word>issued</word>
+            <lemma>issue</lemma>
+            <CharacterOffsetBegin>41</CharacterOffsetBegin>
+            <CharacterOffsetEnd>47</CharacterOffsetEnd>
+            <POS>VBN</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="9">
+            <word>visas</word>
+            <lemma>visa</lemma>
+            <CharacterOffsetBegin>48</CharacterOffsetBegin>
+            <CharacterOffsetEnd>53</CharacterOffsetEnd>
+            <POS>NNS</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="10">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>53</CharacterOffsetBegin>
+            <CharacterOffsetEnd>54</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NP (DT All)) (PP (IN of) (NP (DT the) (NNP September) (JJ 11th) (NNS hijackers)))) (VP (VBD were) (VP (VBN issued) (NP (NNS visas)))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="8">issued</dependent>
+          </dep>
+          <dep type="nsubjpass">
+            <governor idx="8">issued</governor>
+            <dependent idx="1">All</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="1">All</governor>
+            <dependent idx="2">of</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="6">hijackers</governor>
+            <dependent idx="3">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">hijackers</governor>
+            <dependent idx="4">September</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">hijackers</governor>
+            <dependent idx="5">11th</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="2">of</governor>
+            <dependent idx="6">hijackers</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="8">issued</governor>
+            <dependent idx="7">were</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="8">issued</governor>
+            <dependent idx="9">visas</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="8">issued</dependent>
+          </dep>
+          <dep type="nsubjpass">
+            <governor idx="8">issued</governor>
+            <dependent idx="1">All</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="6">hijackers</governor>
+            <dependent idx="3">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">hijackers</governor>
+            <dependent idx="4">September</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">hijackers</governor>
+            <dependent idx="5">11th</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="1">All</governor>
+            <dependent idx="6">hijackers</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="8">issued</governor>
+            <dependent idx="7">were</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="8">issued</governor>
+            <dependent idx="9">visas</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="8">issued</dependent>
+          </dep>
+          <dep type="nsubjpass">
+            <governor idx="8">issued</governor>
+            <dependent idx="1">All</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="6">hijackers</governor>
+            <dependent idx="3">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">hijackers</governor>
+            <dependent idx="4">September</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">hijackers</governor>
+            <dependent idx="5">11th</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="1">All</governor>
+            <dependent idx="6">hijackers</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="8">issued</governor>
+            <dependent idx="7">were</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="8">issued</governor>
+            <dependent idx="9">visas</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

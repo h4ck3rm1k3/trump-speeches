@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>So</word>
+            <lemma>so</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>2</CharacterOffsetEnd>
+            <POS>RB</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="2">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>2</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>,</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="3">
+            <word>they</word>
+            <lemma>they</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>8</CharacterOffsetEnd>
+            <POS>PRP</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="4">
+            <word>'re</word>
+            <lemma>be</lemma>
+            <CharacterOffsetBegin>8</CharacterOffsetBegin>
+            <CharacterOffsetEnd>11</CharacterOffsetEnd>
+            <POS>VBP</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="5">
+            <word>very</word>
+            <lemma>very</lemma>
+            <CharacterOffsetBegin>12</CharacterOffsetBegin>
+            <CharacterOffsetEnd>16</CharacterOffsetEnd>
+            <POS>RB</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="6">
+            <word>conservative</word>
+            <lemma>conservative</lemma>
+            <CharacterOffsetBegin>17</CharacterOffsetBegin>
+            <CharacterOffsetEnd>29</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="7">
+            <word>numbers</word>
+            <lemma>number</lemma>
+            <CharacterOffsetBegin>30</CharacterOffsetBegin>
+            <CharacterOffsetEnd>37</CharacterOffsetEnd>
+            <POS>NNS</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="8">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>37</CharacterOffsetBegin>
+            <CharacterOffsetEnd>38</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (ADVP (RB So)) (, ,) (NP (PRP they)) (VP (VBP 're) (NP (ADJP (RB very) (JJ conservative)) (NNS numbers))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="7">numbers</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="7">numbers</governor>
+            <dependent idx="1">So</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="7">numbers</governor>
+            <dependent idx="3">they</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="7">numbers</governor>
+            <dependent idx="4">'re</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="6">conservative</governor>
+            <dependent idx="5">very</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">numbers</governor>
+            <dependent idx="6">conservative</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="7">numbers</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="7">numbers</governor>
+            <dependent idx="1">So</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="7">numbers</governor>
+            <dependent idx="3">they</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="7">numbers</governor>
+            <dependent idx="4">'re</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="6">conservative</governor>
+            <dependent idx="5">very</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">numbers</governor>
+            <dependent idx="6">conservative</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="7">numbers</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="7">numbers</governor>
+            <dependent idx="1">So</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="7">numbers</governor>
+            <dependent idx="3">they</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="7">numbers</governor>
+            <dependent idx="4">'re</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="6">conservative</governor>
+            <dependent idx="5">very</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">numbers</governor>
+            <dependent idx="6">conservative</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

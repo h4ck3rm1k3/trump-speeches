@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>PBS</word>
+            <lemma>PBS</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="2">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>3</CharacterOffsetBegin>
+            <CharacterOffsetEnd>4</CharacterOffsetEnd>
+            <POS>,</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="3">
+            <word>Public</word>
+            <lemma>Public</lemma>
+            <CharacterOffsetBegin>5</CharacterOffsetBegin>
+            <CharacterOffsetEnd>11</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="4">
+            <word>Broadcasting</word>
+            <lemma>Broadcasting</lemma>
+            <CharacterOffsetBegin>12</CharacterOffsetBegin>
+            <CharacterOffsetEnd>24</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="5">
+            <word>System</word>
+            <lemma>System</lemma>
+            <CharacterOffsetBegin>25</CharacterOffsetBegin>
+            <CharacterOffsetEnd>31</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="6">
+            <word>--</word>
+            <lemma>--</lemma>
+            <CharacterOffsetBegin>32</CharacterOffsetBegin>
+            <CharacterOffsetEnd>33</CharacterOffsetEnd>
+            <POS>:</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="7">
+            <word>69</word>
+            <lemma>69</lemma>
+            <CharacterOffsetBegin>34</CharacterOffsetBegin>
+            <CharacterOffsetEnd>36</CharacterOffsetEnd>
+            <POS>CD</POS>
+            <NER>PERCENT</NER>
+            <NormalizedNER>%69.0</NormalizedNER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="8">
+            <word>percent</word>
+            <lemma>percent</lemma>
+            <CharacterOffsetBegin>37</CharacterOffsetBegin>
+            <CharacterOffsetEnd>44</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>PERCENT</NER>
+            <NormalizedNER>%69.0</NormalizedNER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="9">
+            <word>said</word>
+            <lemma>say</lemma>
+            <CharacterOffsetBegin>45</CharacterOffsetBegin>
+            <CharacterOffsetEnd>49</CharacterOffsetEnd>
+            <POS>VBD</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="10">
+            <word>Trump</word>
+            <lemma>Trump</lemma>
+            <CharacterOffsetBegin>50</CharacterOffsetBegin>
+            <CharacterOffsetEnd>55</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>PERSON</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="11">
+            <word>won</word>
+            <lemma>win</lemma>
+            <CharacterOffsetBegin>56</CharacterOffsetBegin>
+            <CharacterOffsetEnd>59</CharacterOffsetEnd>
+            <POS>VBD</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="12">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>59</CharacterOffsetBegin>
+            <CharacterOffsetEnd>60</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (NNP PBS) (, ,) (NNP Public) (NNP Broadcasting) (NNP System)) (: --) (S (NP (CD 69) (NN percent)) (VP (VBD said) (SBAR (S (NP (NNP Trump)) (VP (VBD won)))))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">System</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">System</governor>
+            <dependent idx="1">PBS</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="5">System</governor>
+            <dependent idx="3">Public</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">System</governor>
+            <dependent idx="4">Broadcasting</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="8">percent</governor>
+            <dependent idx="7">69</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="9">said</governor>
+            <dependent idx="8">percent</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="5">System</governor>
+            <dependent idx="9">said</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="11">won</governor>
+            <dependent idx="10">Trump</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="9">said</governor>
+            <dependent idx="11">won</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">System</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">System</governor>
+            <dependent idx="1">PBS</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="5">System</governor>
+            <dependent idx="3">Public</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">System</governor>
+            <dependent idx="4">Broadcasting</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="8">percent</governor>
+            <dependent idx="7">69</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="9">said</governor>
+            <dependent idx="8">percent</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="5">System</governor>
+            <dependent idx="9">said</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="11">won</governor>
+            <dependent idx="10">Trump</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="9">said</governor>
+            <dependent idx="11">won</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">System</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">System</governor>
+            <dependent idx="1">PBS</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="5">System</governor>
+            <dependent idx="3">Public</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">System</governor>
+            <dependent idx="4">Broadcasting</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="8">percent</governor>
+            <dependent idx="7">69</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="9">said</governor>
+            <dependent idx="8">percent</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="5">System</governor>
+            <dependent idx="9">said</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="11">won</governor>
+            <dependent idx="10">Trump</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="9">said</governor>
+            <dependent idx="11">won</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

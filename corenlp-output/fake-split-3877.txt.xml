@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>It</word>
+            <lemma>it</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>2</CharacterOffsetEnd>
+            <POS>PRP</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="2">
+            <word>'s</word>
+            <lemma>be</lemma>
+            <CharacterOffsetBegin>2</CharacterOffsetBegin>
+            <CharacterOffsetEnd>4</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="3">
+            <word>not</word>
+            <lemma>not</lemma>
+            <CharacterOffsetBegin>5</CharacterOffsetBegin>
+            <CharacterOffsetEnd>8</CharacterOffsetEnd>
+            <POS>RB</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="4">
+            <word>like</word>
+            <lemma>like</lemma>
+            <CharacterOffsetBegin>9</CharacterOffsetBegin>
+            <CharacterOffsetEnd>13</CharacterOffsetEnd>
+            <POS>VB</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="5">
+            <word>``</word>
+            <lemma>``</lemma>
+            <CharacterOffsetBegin>14</CharacterOffsetBegin>
+            <CharacterOffsetEnd>15</CharacterOffsetEnd>
+            <POS>``</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>Oh</word>
+            <lemma>oh</lemma>
+            <CharacterOffsetBegin>15</CharacterOffsetBegin>
+            <CharacterOffsetEnd>17</CharacterOffsetEnd>
+            <POS>UH</POS>
+            <NER>O</NER>
+            <Speaker>PER1</Speaker>
+          </token>
+          <token id="7">
+            <word>gee</word>
+            <lemma>gee</lemma>
+            <CharacterOffsetBegin>18</CharacterOffsetBegin>
+            <CharacterOffsetEnd>21</CharacterOffsetEnd>
+            <POS>RB</POS>
+            <NER>O</NER>
+            <Speaker>PER1</Speaker>
+          </token>
+          <token id="8">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>21</CharacterOffsetBegin>
+            <CharacterOffsetEnd>22</CharacterOffsetEnd>
+            <POS>,</POS>
+            <NER>O</NER>
+            <Speaker>PER1</Speaker>
+          </token>
+          <token id="9">
+            <word>we</word>
+            <lemma>we</lemma>
+            <CharacterOffsetBegin>23</CharacterOffsetBegin>
+            <CharacterOffsetEnd>25</CharacterOffsetEnd>
+            <POS>PRP</POS>
+            <NER>O</NER>
+            <Speaker>PER1</Speaker>
+          </token>
+          <token id="10">
+            <word>disagree</word>
+            <lemma>disagree</lemma>
+            <CharacterOffsetBegin>26</CharacterOffsetBegin>
+            <CharacterOffsetEnd>34</CharacterOffsetEnd>
+            <POS>VBP</POS>
+            <NER>O</NER>
+            <Speaker>PER1</Speaker>
+          </token>
+          <token id="11">
+            <word>on</word>
+            <lemma>on</lemma>
+            <CharacterOffsetBegin>35</CharacterOffsetBegin>
+            <CharacterOffsetEnd>37</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+            <Speaker>PER1</Speaker>
+          </token>
+          <token id="12">
+            <word>Obamacare</word>
+            <lemma>Obamacare</lemma>
+            <CharacterOffsetBegin>38</CharacterOffsetBegin>
+            <CharacterOffsetEnd>47</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>O</NER>
+            <Speaker>PER1</Speaker>
+          </token>
+          <token id="13">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>47</CharacterOffsetBegin>
+            <CharacterOffsetEnd>48</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+            <Speaker>PER1</Speaker>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (S (NP (PRP It)) (VP (VBZ 's) (RB not) (VP (VB like) (INTJ (`` ``) (UH Oh)))) (ADVP (RB gee))) (, ,) (NP (PRP we)) (VP (VBP disagree) (PP (IN on) (NP (NNP Obamacare)))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="10">disagree</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">like</governor>
+            <dependent idx="1">It</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="4">like</governor>
+            <dependent idx="2">'s</dependent>
+          </dep>
+          <dep type="neg">
+            <governor idx="4">like</governor>
+            <dependent idx="3">not</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="10">disagree</governor>
+            <dependent idx="4">like</dependent>
+          </dep>
+          <dep type="discourse">
+            <governor idx="4">like</governor>
+            <dependent idx="6">Oh</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="4">like</governor>
+            <dependent idx="7">gee</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="10">disagree</governor>
+            <dependent idx="9">we</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="10">disagree</governor>
+            <dependent idx="11">on</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="11">on</governor>
+            <dependent idx="12">Obamacare</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="10">disagree</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">like</governor>
+            <dependent idx="1">It</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="4">like</governor>
+            <dependent idx="2">'s</dependent>
+          </dep>
+          <dep type="neg">
+            <governor idx="4">like</governor>
+            <dependent idx="3">not</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="10">disagree</governor>
+            <dependent idx="4">like</dependent>
+          </dep>
+          <dep type="discourse">
+            <governor idx="4">like</governor>
+            <dependent idx="6">Oh</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="4">like</governor>
+            <dependent idx="7">gee</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="10">disagree</governor>
+            <dependent idx="9">we</dependent>
+          </dep>
+          <dep type="prep_on">
+            <governor idx="10">disagree</governor>
+            <dependent idx="12">Obamacare</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="10">disagree</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">like</governor>
+            <dependent idx="1">It</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="4">like</governor>
+            <dependent idx="2">'s</dependent>
+          </dep>
+          <dep type="neg">
+            <governor idx="4">like</governor>
+            <dependent idx="3">not</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="10">disagree</governor>
+            <dependent idx="4">like</dependent>
+          </dep>
+          <dep type="discourse">
+            <governor idx="4">like</governor>
+            <dependent idx="6">Oh</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="4">like</governor>
+            <dependent idx="7">gee</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="10">disagree</governor>
+            <dependent idx="9">we</dependent>
+          </dep>
+          <dep type="prep_on">
+            <governor idx="10">disagree</governor>
+            <dependent idx="12">Obamacare</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>Or</word>
+            <lemma>or</lemma>
+            <CharacterOffsetBegin>49</CharacterOffsetBegin>
+            <CharacterOffsetEnd>51</CharacterOffsetEnd>
+            <POS>CC</POS>
+            <NER>O</NER>
+            <Speaker>PER1</Speaker>
+          </token>
+          <token id="2">
+            <word>we</word>
+            <lemma>we</lemma>
+            <CharacterOffsetBegin>52</CharacterOffsetBegin>
+            <CharacterOffsetEnd>54</CharacterOffsetEnd>
+            <POS>PRP</POS>
+            <NER>O</NER>
+            <Speaker>PER1</Speaker>
+          </token>
+          <token id="3">
+            <word>disagree</word>
+            <lemma>disagree</lemma>
+            <CharacterOffsetBegin>55</CharacterOffsetBegin>
+            <CharacterOffsetEnd>63</CharacterOffsetEnd>
+            <POS>VBP</POS>
+            <NER>O</NER>
+            <Speaker>PER1</Speaker>
+          </token>
+          <token id="4">
+            <word>on</word>
+            <lemma>on</lemma>
+            <CharacterOffsetBegin>64</CharacterOffsetBegin>
+            <CharacterOffsetEnd>66</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+            <Speaker>PER1</Speaker>
+          </token>
+          <token id="5">
+            <word>something</word>
+            <lemma>something</lemma>
+            <CharacterOffsetBegin>67</CharacterOffsetBegin>
+            <CharacterOffsetEnd>76</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+            <Speaker>PER1</Speaker>
+          </token>
+          <token id="6">
+            <word>else</word>
+            <lemma>else</lemma>
+            <CharacterOffsetBegin>77</CharacterOffsetBegin>
+            <CharacterOffsetEnd>81</CharacterOffsetEnd>
+            <POS>RB</POS>
+            <NER>O</NER>
+            <Speaker>PER1</Speaker>
+          </token>
+          <token id="7">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>81</CharacterOffsetBegin>
+            <CharacterOffsetEnd>82</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+            <Speaker>PER1</Speaker>
+          </token>
+          <token id="8">
+            <word>''</word>
+            <lemma>''</lemma>
+            <CharacterOffsetBegin>82</CharacterOffsetBegin>
+            <CharacterOffsetEnd>83</CharacterOffsetEnd>
+            <POS>''</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (CC Or) (NP (PRP we)) (VP (VBP disagree) (PP (IN on) (NP (NN something) (RB else)))) (. .) ('' ''))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">disagree</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="3">disagree</governor>
+            <dependent idx="1">Or</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">disagree</governor>
+            <dependent idx="2">we</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="3">disagree</governor>
+            <dependent idx="4">on</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="4">on</governor>
+            <dependent idx="5">something</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="5">something</governor>
+            <dependent idx="6">else</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">disagree</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="3">disagree</governor>
+            <dependent idx="1">Or</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">disagree</governor>
+            <dependent idx="2">we</dependent>
+          </dep>
+          <dep type="prep_on">
+            <governor idx="3">disagree</governor>
+            <dependent idx="5">something</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="5">something</governor>
+            <dependent idx="6">else</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">disagree</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="3">disagree</governor>
+            <dependent idx="1">Or</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">disagree</governor>
+            <dependent idx="2">we</dependent>
+          </dep>
+          <dep type="prep_on">
+            <governor idx="3">disagree</governor>
+            <dependent idx="5">something</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="5">something</governor>
+            <dependent idx="6">else</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+    <coreference>
+      <coreference>
+        <mention representative="true">
+          <sentence>1</sentence>
+          <start>9</start>
+          <end>10</end>
+          <head>9</head>
+          <text>we</text>
+        </mention>
+        <mention>
+          <sentence>2</sentence>
+          <start>2</start>
+          <end>3</end>
+          <head>2</head>
+          <text>we</text>
+        </mention>
+      </coreference>
+    </coreference>
+  </document>
+</root>
