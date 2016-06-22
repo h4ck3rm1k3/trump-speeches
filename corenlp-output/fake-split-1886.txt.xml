@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>I</word>
+            <lemma>I</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>1</CharacterOffsetEnd>
+            <POS>PRP</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="2">
+            <word>watched</word>
+            <lemma>watch</lemma>
+            <CharacterOffsetBegin>2</CharacterOffsetBegin>
+            <CharacterOffsetEnd>9</CharacterOffsetEnd>
+            <POS>VBD</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="3">
+            <word>New</word>
+            <lemma>New</lemma>
+            <CharacterOffsetBegin>10</CharacterOffsetBegin>
+            <CharacterOffsetEnd>13</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>MISC</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="4">
+            <word>Yorkers</word>
+            <lemma>Yorkers</lemma>
+            <CharacterOffsetBegin>14</CharacterOffsetBegin>
+            <CharacterOffsetEnd>21</CharacterOffsetEnd>
+            <POS>NNPS</POS>
+            <NER>MISC</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="5">
+            <word>rebuild</word>
+            <lemma>rebuild</lemma>
+            <CharacterOffsetBegin>22</CharacterOffsetBegin>
+            <CharacterOffsetEnd>29</CharacterOffsetEnd>
+            <POS>VB</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="6">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>30</CharacterOffsetBegin>
+            <CharacterOffsetEnd>33</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="7">
+            <word>World</word>
+            <lemma>World</lemma>
+            <CharacterOffsetBegin>34</CharacterOffsetBegin>
+            <CharacterOffsetEnd>39</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="8">
+            <word>Trade</word>
+            <lemma>Trade</lemma>
+            <CharacterOffsetBegin>40</CharacterOffsetBegin>
+            <CharacterOffsetEnd>45</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="9">
+            <word>Center</word>
+            <lemma>Center</lemma>
+            <CharacterOffsetBegin>46</CharacterOffsetBegin>
+            <CharacterOffsetEnd>52</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="10">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>52</CharacterOffsetBegin>
+            <CharacterOffsetEnd>53</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (PRP I)) (VP (VBD watched) (S (NP (NNP New) (NNPS Yorkers)) (VP (VB rebuild) (NP (DT the) (NNP World) (NNP Trade) (NNP Center))))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">watched</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="2">watched</governor>
+            <dependent idx="1">I</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">Yorkers</governor>
+            <dependent idx="3">New</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">rebuild</governor>
+            <dependent idx="4">Yorkers</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="2">watched</governor>
+            <dependent idx="5">rebuild</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="9">Center</governor>
+            <dependent idx="6">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">Center</governor>
+            <dependent idx="7">World</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">Center</governor>
+            <dependent idx="8">Trade</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="5">rebuild</governor>
+            <dependent idx="9">Center</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">watched</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="2">watched</governor>
+            <dependent idx="1">I</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">Yorkers</governor>
+            <dependent idx="3">New</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">rebuild</governor>
+            <dependent idx="4">Yorkers</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="2">watched</governor>
+            <dependent idx="5">rebuild</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="9">Center</governor>
+            <dependent idx="6">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">Center</governor>
+            <dependent idx="7">World</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">Center</governor>
+            <dependent idx="8">Trade</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="5">rebuild</governor>
+            <dependent idx="9">Center</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">watched</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="2">watched</governor>
+            <dependent idx="1">I</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">Yorkers</governor>
+            <dependent idx="3">New</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">rebuild</governor>
+            <dependent idx="4">Yorkers</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="2">watched</governor>
+            <dependent idx="5">rebuild</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="9">Center</governor>
+            <dependent idx="6">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">Center</governor>
+            <dependent idx="7">World</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">Center</governor>
+            <dependent idx="8">Trade</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="5">rebuild</governor>
+            <dependent idx="9">Center</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>I</word>
+            <lemma>I</lemma>
+            <CharacterOffsetBegin>54</CharacterOffsetBegin>
+            <CharacterOffsetEnd>55</CharacterOffsetEnd>
+            <POS>PRP</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="2">
+            <word>watched</word>
+            <lemma>watch</lemma>
+            <CharacterOffsetBegin>56</CharacterOffsetBegin>
+            <CharacterOffsetEnd>63</CharacterOffsetEnd>
+            <POS>VBD</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="3">
+            <word>New</word>
+            <lemma>New</lemma>
+            <CharacterOffsetBegin>64</CharacterOffsetBegin>
+            <CharacterOffsetEnd>67</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>MISC</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="4">
+            <word>Yorkers</word>
+            <lemma>Yorkers</lemma>
+            <CharacterOffsetBegin>68</CharacterOffsetBegin>
+            <CharacterOffsetEnd>75</CharacterOffsetEnd>
+            <POS>NNPS</POS>
+            <NER>MISC</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="5">
+            <word>dying</word>
+            <lemma>die</lemma>
+            <CharacterOffsetBegin>76</CharacterOffsetBegin>
+            <CharacterOffsetEnd>81</CharacterOffsetEnd>
+            <POS>VBG</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="6">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>81</CharacterOffsetBegin>
+            <CharacterOffsetEnd>82</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (PRP I)) (VP (VBD watched) (S (NP (NNP New) (NNPS Yorkers)) (ADJP (VBG dying)))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">watched</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="2">watched</governor>
+            <dependent idx="1">I</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">Yorkers</governor>
+            <dependent idx="3">New</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">dying</governor>
+            <dependent idx="4">Yorkers</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="2">watched</governor>
+            <dependent idx="5">dying</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">watched</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="2">watched</governor>
+            <dependent idx="1">I</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">Yorkers</governor>
+            <dependent idx="3">New</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">dying</governor>
+            <dependent idx="4">Yorkers</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="2">watched</governor>
+            <dependent idx="5">dying</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">watched</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="2">watched</governor>
+            <dependent idx="1">I</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">Yorkers</governor>
+            <dependent idx="3">New</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">dying</governor>
+            <dependent idx="4">Yorkers</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="2">watched</governor>
+            <dependent idx="5">dying</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+    <coreference>
+      <coreference>
+        <mention representative="true">
+          <sentence>1</sentence>
+          <start>3</start>
+          <end>5</end>
+          <head>4</head>
+          <text>New Yorkers</text>
+        </mention>
+        <mention>
+          <sentence>2</sentence>
+          <start>3</start>
+          <end>5</end>
+          <head>4</head>
+          <text>New Yorkers</text>
+        </mention>
+      </coreference>
+      <coreference>
+        <mention representative="true">
+          <sentence>1</sentence>
+          <start>1</start>
+          <end>2</end>
+          <head>1</head>
+          <text>I</text>
+        </mention>
+        <mention>
+          <sentence>2</sentence>
+          <start>1</start>
+          <end>2</end>
+          <head>1</head>
+          <text>I</text>
+        </mention>
+      </coreference>
+    </coreference>
+  </document>
+</root>

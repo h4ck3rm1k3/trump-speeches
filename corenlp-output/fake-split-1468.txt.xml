@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Now</word>
+            <lemma>now</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>RB</POS>
+            <NER>DATE</NER>
+            <NormalizedNER>PRESENT_REF</NormalizedNER>
+            <Speaker>PER0</Speaker>
+            <Timex tid="t1" type="DATE">PRESENT_REF</Timex>
+          </token>
+          <token id="2">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>3</CharacterOffsetBegin>
+            <CharacterOffsetEnd>4</CharacterOffsetEnd>
+            <POS>,</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="3">
+            <word>what</word>
+            <lemma>what</lemma>
+            <CharacterOffsetBegin>5</CharacterOffsetBegin>
+            <CharacterOffsetEnd>9</CharacterOffsetEnd>
+            <POS>WP</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="4">
+            <word>would</word>
+            <lemma>would</lemma>
+            <CharacterOffsetBegin>10</CharacterOffsetBegin>
+            <CharacterOffsetEnd>15</CharacterOffsetEnd>
+            <POS>MD</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="5">
+            <word>I</word>
+            <lemma>I</lemma>
+            <CharacterOffsetBegin>16</CharacterOffsetBegin>
+            <CharacterOffsetEnd>17</CharacterOffsetEnd>
+            <POS>PRP</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="6">
+            <word>say</word>
+            <lemma>say</lemma>
+            <CharacterOffsetBegin>18</CharacterOffsetBegin>
+            <CharacterOffsetEnd>21</CharacterOffsetEnd>
+            <POS>VB</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="7">
+            <word>good</word>
+            <lemma>good</lemma>
+            <CharacterOffsetBegin>22</CharacterOffsetBegin>
+            <CharacterOffsetEnd>26</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="8">
+            <word>about</word>
+            <lemma>about</lemma>
+            <CharacterOffsetBegin>27</CharacterOffsetBegin>
+            <CharacterOffsetEnd>32</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="9">
+            <word>Mitt</word>
+            <lemma>Mitt</lemma>
+            <CharacterOffsetBegin>33</CharacterOffsetBegin>
+            <CharacterOffsetEnd>37</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>PERSON</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="10">
+            <word>Romney</word>
+            <lemma>Romney</lemma>
+            <CharacterOffsetBegin>38</CharacterOffsetBegin>
+            <CharacterOffsetEnd>44</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>PERSON</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="11">
+            <word>?</word>
+            <lemma>?</lemma>
+            <CharacterOffsetBegin>44</CharacterOffsetBegin>
+            <CharacterOffsetEnd>45</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+        </tokens>
+        <parse>(ROOT (FRAG (NP (RB Now)) (, ,) (SBAR (WHNP (WP what)) (SINV (MD would) (NP (PRP I)) (VP (VB say) (ADJP (JJ good)) (PP (IN about) (NP (NNP Mitt) (NNP Romney)))))) (. ?))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">Now</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="6">say</governor>
+            <dependent idx="3">what</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="6">say</governor>
+            <dependent idx="4">would</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">say</governor>
+            <dependent idx="5">I</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">Now</governor>
+            <dependent idx="6">say</dependent>
+          </dep>
+          <dep type="acomp">
+            <governor idx="6">say</governor>
+            <dependent idx="7">good</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="6">say</governor>
+            <dependent idx="8">about</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">Romney</governor>
+            <dependent idx="9">Mitt</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="8">about</governor>
+            <dependent idx="10">Romney</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">Now</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="6">say</governor>
+            <dependent idx="3">what</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="6">say</governor>
+            <dependent idx="4">would</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">say</governor>
+            <dependent idx="5">I</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">Now</governor>
+            <dependent idx="6">say</dependent>
+          </dep>
+          <dep type="acomp">
+            <governor idx="6">say</governor>
+            <dependent idx="7">good</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">Romney</governor>
+            <dependent idx="9">Mitt</dependent>
+          </dep>
+          <dep type="prep_about">
+            <governor idx="6">say</governor>
+            <dependent idx="10">Romney</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">Now</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="6">say</governor>
+            <dependent idx="3">what</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="6">say</governor>
+            <dependent idx="4">would</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">say</governor>
+            <dependent idx="5">I</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">Now</governor>
+            <dependent idx="6">say</dependent>
+          </dep>
+          <dep type="acomp">
+            <governor idx="6">say</governor>
+            <dependent idx="7">good</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">Romney</governor>
+            <dependent idx="9">Mitt</dependent>
+          </dep>
+          <dep type="prep_about">
+            <governor idx="6">say</governor>
+            <dependent idx="10">Romney</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>
