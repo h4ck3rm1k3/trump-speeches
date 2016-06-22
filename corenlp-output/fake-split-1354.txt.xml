@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Well</word>
+            <lemma>well</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>4</CharacterOffsetEnd>
+            <POS>RB</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="2">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>5</CharacterOffsetEnd>
+            <POS>,</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="3">
+            <word>generally</word>
+            <lemma>generally</lemma>
+            <CharacterOffsetBegin>6</CharacterOffsetBegin>
+            <CharacterOffsetEnd>15</CharacterOffsetEnd>
+            <POS>RB</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="4">
+            <word>speaking</word>
+            <lemma>speak</lemma>
+            <CharacterOffsetBegin>16</CharacterOffsetBegin>
+            <CharacterOffsetEnd>24</CharacterOffsetEnd>
+            <POS>VBG</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="5">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>24</CharacterOffsetBegin>
+            <CharacterOffsetEnd>25</CharacterOffsetEnd>
+            <POS>,</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="6">
+            <word>that</word>
+            <lemma>that</lemma>
+            <CharacterOffsetBegin>26</CharacterOffsetBegin>
+            <CharacterOffsetEnd>30</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="7">
+            <word>'s</word>
+            <lemma>be</lemma>
+            <CharacterOffsetBegin>30</CharacterOffsetBegin>
+            <CharacterOffsetEnd>32</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="8">
+            <word>100</word>
+            <lemma>100</lemma>
+            <CharacterOffsetBegin>33</CharacterOffsetBegin>
+            <CharacterOffsetEnd>36</CharacterOffsetEnd>
+            <POS>CD</POS>
+            <NER>PERCENT</NER>
+            <NormalizedNER>%100.0</NormalizedNER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="9">
+            <word>%</word>
+            <lemma>%</lemma>
+            <CharacterOffsetBegin>36</CharacterOffsetBegin>
+            <CharacterOffsetEnd>37</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>PERCENT</NER>
+            <NormalizedNER>%100.0</NormalizedNER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="10">
+            <word>true</word>
+            <lemma>true</lemma>
+            <CharacterOffsetBegin>38</CharacterOffsetBegin>
+            <CharacterOffsetEnd>42</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="11">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>42</CharacterOffsetBegin>
+            <CharacterOffsetEnd>43</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (ADVP (RB Well)) (, ,) (S (ADVP (RB generally)) (VP (VBG speaking))) (, ,) (NP (DT that)) (VP (VBZ 's) (ADJP (NP (CD 100) (NN %)) (JJ true))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="10">true</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="10">true</governor>
+            <dependent idx="1">Well</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="4">speaking</governor>
+            <dependent idx="3">generally</dependent>
+          </dep>
+          <dep type="partmod">
+            <governor idx="10">true</governor>
+            <dependent idx="4">speaking</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="10">true</governor>
+            <dependent idx="6">that</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="10">true</governor>
+            <dependent idx="7">'s</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="9">%</governor>
+            <dependent idx="8">100</dependent>
+          </dep>
+          <dep type="npadvmod">
+            <governor idx="10">true</governor>
+            <dependent idx="9">%</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="10">true</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="10">true</governor>
+            <dependent idx="1">Well</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="4">speaking</governor>
+            <dependent idx="3">generally</dependent>
+          </dep>
+          <dep type="partmod">
+            <governor idx="10">true</governor>
+            <dependent idx="4">speaking</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="10">true</governor>
+            <dependent idx="6">that</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="10">true</governor>
+            <dependent idx="7">'s</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="9">%</governor>
+            <dependent idx="8">100</dependent>
+          </dep>
+          <dep type="npadvmod">
+            <governor idx="10">true</governor>
+            <dependent idx="9">%</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="10">true</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="10">true</governor>
+            <dependent idx="1">Well</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="4">speaking</governor>
+            <dependent idx="3">generally</dependent>
+          </dep>
+          <dep type="partmod">
+            <governor idx="10">true</governor>
+            <dependent idx="4">speaking</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="10">true</governor>
+            <dependent idx="6">that</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="10">true</governor>
+            <dependent idx="7">'s</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="9">%</governor>
+            <dependent idx="8">100</dependent>
+          </dep>
+          <dep type="npadvmod">
+            <governor idx="10">true</governor>
+            <dependent idx="9">%</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Nobody</word>
+            <lemma>nobody</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>6</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="2">
+            <word>gave</word>
+            <lemma>give</lemma>
+            <CharacterOffsetBegin>7</CharacterOffsetBegin>
+            <CharacterOffsetEnd>11</CharacterOffsetEnd>
+            <POS>VBD</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="3">
+            <word>this</word>
+            <lemma>this</lemma>
+            <CharacterOffsetBegin>12</CharacterOffsetBegin>
+            <CharacterOffsetEnd>16</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="4">
+            <word>kind</word>
+            <lemma>kind</lemma>
+            <CharacterOffsetBegin>17</CharacterOffsetBegin>
+            <CharacterOffsetEnd>21</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="5">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>22</CharacterOffsetBegin>
+            <CharacterOffsetEnd>24</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="6">
+            <word>money</word>
+            <lemma>money</lemma>
+            <CharacterOffsetBegin>25</CharacterOffsetBegin>
+            <CharacterOffsetEnd>30</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="7">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>30</CharacterOffsetBegin>
+            <CharacterOffsetEnd>31</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NN Nobody)) (VP (VBD gave) (NP (NP (DT this) (NN kind)) (PP (IN of) (NP (NN money))))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">gave</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="2">gave</governor>
+            <dependent idx="1">Nobody</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">kind</governor>
+            <dependent idx="3">this</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="2">gave</governor>
+            <dependent idx="4">kind</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="4">kind</governor>
+            <dependent idx="5">of</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="5">of</governor>
+            <dependent idx="6">money</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">gave</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="2">gave</governor>
+            <dependent idx="1">Nobody</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">kind</governor>
+            <dependent idx="3">this</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="2">gave</governor>
+            <dependent idx="4">kind</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="4">kind</governor>
+            <dependent idx="6">money</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">gave</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="2">gave</governor>
+            <dependent idx="1">Nobody</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">kind</governor>
+            <dependent idx="3">this</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="2">gave</governor>
+            <dependent idx="4">kind</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="4">kind</governor>
+            <dependent idx="6">money</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

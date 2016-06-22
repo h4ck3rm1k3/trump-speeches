@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>We</word>
+            <lemma>we</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>2</CharacterOffsetEnd>
+            <POS>PRP</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="2">
+            <word>'ve</word>
+            <lemma>have</lemma>
+            <CharacterOffsetBegin>2</CharacterOffsetBegin>
+            <CharacterOffsetEnd>5</CharacterOffsetEnd>
+            <POS>VBP</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="3">
+            <word>started</word>
+            <lemma>start</lemma>
+            <CharacterOffsetBegin>6</CharacterOffsetBegin>
+            <CharacterOffsetEnd>13</CharacterOffsetEnd>
+            <POS>VBN</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="4">
+            <word>working</word>
+            <lemma>work</lemma>
+            <CharacterOffsetBegin>14</CharacterOffsetBegin>
+            <CharacterOffsetEnd>21</CharacterOffsetEnd>
+            <POS>VBG</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="5">
+            <word>already</word>
+            <lemma>already</lemma>
+            <CharacterOffsetBegin>22</CharacterOffsetBegin>
+            <CharacterOffsetEnd>29</CharacterOffsetEnd>
+            <POS>RB</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="6">
+            <word>on</word>
+            <lemma>on</lemma>
+            <CharacterOffsetBegin>30</CharacterOffsetBegin>
+            <CharacterOffsetEnd>32</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="7">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>33</CharacterOffsetBegin>
+            <CharacterOffsetEnd>36</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="8">
+            <word>convention</word>
+            <lemma>convention</lemma>
+            <CharacterOffsetBegin>37</CharacterOffsetBegin>
+            <CharacterOffsetEnd>47</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="9">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>47</CharacterOffsetBegin>
+            <CharacterOffsetEnd>48</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (PRP We)) (VP (VBP 've) (VP (VBN started) (S (VP (VBG working) (ADVP (RB already)) (PP (IN on) (NP (DT the) (NN convention))))))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">started</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">started</governor>
+            <dependent idx="1">We</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="3">started</governor>
+            <dependent idx="2">'ve</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="3">started</governor>
+            <dependent idx="4">working</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="4">working</governor>
+            <dependent idx="5">already</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="4">working</governor>
+            <dependent idx="6">on</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">convention</governor>
+            <dependent idx="7">the</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="6">on</governor>
+            <dependent idx="8">convention</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">started</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">started</governor>
+            <dependent idx="1">We</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="3">started</governor>
+            <dependent idx="2">'ve</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="3">started</governor>
+            <dependent idx="4">working</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="4">working</governor>
+            <dependent idx="5">already</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">convention</governor>
+            <dependent idx="7">the</dependent>
+          </dep>
+          <dep type="prep_on">
+            <governor idx="4">working</governor>
+            <dependent idx="8">convention</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">started</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">started</governor>
+            <dependent idx="1">We</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="3">started</governor>
+            <dependent idx="2">'ve</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="3">started</governor>
+            <dependent idx="4">working</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="4">working</governor>
+            <dependent idx="5">already</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">convention</governor>
+            <dependent idx="7">the</dependent>
+          </dep>
+          <dep type="prep_on">
+            <governor idx="4">working</governor>
+            <dependent idx="8">convention</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

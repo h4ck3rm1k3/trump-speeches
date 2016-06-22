@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>I</word>
+            <lemma>I</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>1</CharacterOffsetEnd>
+            <POS>PRP</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="2">
+            <word>'m</word>
+            <lemma>be</lemma>
+            <CharacterOffsetBegin>1</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>VBP</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="3">
+            <word>truly</word>
+            <lemma>truly</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>9</CharacterOffsetEnd>
+            <POS>RB</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="4">
+            <word>honored</word>
+            <lemma>honor</lemma>
+            <CharacterOffsetBegin>10</CharacterOffsetBegin>
+            <CharacterOffsetEnd>17</CharacterOffsetEnd>
+            <POS>VBN</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="5">
+            <word>by</word>
+            <lemma>by</lemma>
+            <CharacterOffsetBegin>18</CharacterOffsetBegin>
+            <CharacterOffsetEnd>20</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="6">
+            <word>your</word>
+            <lemma>you</lemma>
+            <CharacterOffsetBegin>21</CharacterOffsetBegin>
+            <CharacterOffsetEnd>25</CharacterOffsetEnd>
+            <POS>PRP$</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="7">
+            <word>support</word>
+            <lemma>support</lemma>
+            <CharacterOffsetBegin>26</CharacterOffsetBegin>
+            <CharacterOffsetEnd>33</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="8">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>33</CharacterOffsetBegin>
+            <CharacterOffsetEnd>34</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (PRP I)) (VP (VBP 'm) (ADJP (RB truly) (VBN honored) (PP (IN by) (NP (PRP$ your) (NN support))))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">honored</dependent>
+          </dep>
+          <dep type="nsubjpass">
+            <governor idx="4">honored</governor>
+            <dependent idx="1">I</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="4">honored</governor>
+            <dependent idx="2">'m</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="4">honored</governor>
+            <dependent idx="3">truly</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="4">honored</governor>
+            <dependent idx="5">by</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="7">support</governor>
+            <dependent idx="6">your</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="5">by</governor>
+            <dependent idx="7">support</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">honored</dependent>
+          </dep>
+          <dep type="nsubjpass">
+            <governor idx="4">honored</governor>
+            <dependent idx="1">I</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="4">honored</governor>
+            <dependent idx="2">'m</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="4">honored</governor>
+            <dependent idx="3">truly</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="7">support</governor>
+            <dependent idx="6">your</dependent>
+          </dep>
+          <dep type="agent">
+            <governor idx="4">honored</governor>
+            <dependent idx="7">support</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">honored</dependent>
+          </dep>
+          <dep type="nsubjpass">
+            <governor idx="4">honored</governor>
+            <dependent idx="1">I</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="4">honored</governor>
+            <dependent idx="2">'m</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="4">honored</governor>
+            <dependent idx="3">truly</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="7">support</governor>
+            <dependent idx="6">your</dependent>
+          </dep>
+          <dep type="agent">
+            <governor idx="4">honored</governor>
+            <dependent idx="7">support</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

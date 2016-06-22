@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Together</word>
+            <lemma>together</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>8</CharacterOffsetEnd>
+            <POS>RB</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="2">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>8</CharacterOffsetBegin>
+            <CharacterOffsetEnd>9</CharacterOffsetEnd>
+            <POS>,</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="3">
+            <word>we</word>
+            <lemma>we</lemma>
+            <CharacterOffsetBegin>10</CharacterOffsetBegin>
+            <CharacterOffsetEnd>12</CharacterOffsetEnd>
+            <POS>PRP</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="4">
+            <word>will</word>
+            <lemma>will</lemma>
+            <CharacterOffsetBegin>13</CharacterOffsetBegin>
+            <CharacterOffsetEnd>17</CharacterOffsetEnd>
+            <POS>MD</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="5">
+            <word>put</word>
+            <lemma>put</lemma>
+            <CharacterOffsetBegin>18</CharacterOffsetBegin>
+            <CharacterOffsetEnd>21</CharacterOffsetEnd>
+            <POS>VB</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="6">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>22</CharacterOffsetBegin>
+            <CharacterOffsetEnd>25</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="7">
+            <word>American</word>
+            <lemma>american</lemma>
+            <CharacterOffsetBegin>26</CharacterOffsetBegin>
+            <CharacterOffsetEnd>34</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>MISC</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="8">
+            <word>people</word>
+            <lemma>people</lemma>
+            <CharacterOffsetBegin>35</CharacterOffsetBegin>
+            <CharacterOffsetEnd>41</CharacterOffsetEnd>
+            <POS>NNS</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="9">
+            <word>first</word>
+            <lemma>first</lemma>
+            <CharacterOffsetBegin>42</CharacterOffsetBegin>
+            <CharacterOffsetEnd>47</CharacterOffsetEnd>
+            <POS>RB</POS>
+            <NER>ORDINAL</NER>
+            <NormalizedNER>1.0</NormalizedNER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="10">
+            <word>again</word>
+            <lemma>again</lemma>
+            <CharacterOffsetBegin>48</CharacterOffsetBegin>
+            <CharacterOffsetEnd>53</CharacterOffsetEnd>
+            <POS>RB</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="11">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>53</CharacterOffsetBegin>
+            <CharacterOffsetEnd>54</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (ADVP (RB Together)) (, ,) (NP (PRP we)) (VP (MD will) (VP (VB put) (NP (DT the) (JJ American) (NNS people)) (ADVP (RB first)) (ADVP (RB again)))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">put</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="5">put</governor>
+            <dependent idx="1">Together</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">put</governor>
+            <dependent idx="3">we</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="5">put</governor>
+            <dependent idx="4">will</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">people</governor>
+            <dependent idx="6">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">people</governor>
+            <dependent idx="7">American</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="5">put</governor>
+            <dependent idx="8">people</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="5">put</governor>
+            <dependent idx="9">first</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="5">put</governor>
+            <dependent idx="10">again</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">put</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="5">put</governor>
+            <dependent idx="1">Together</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">put</governor>
+            <dependent idx="3">we</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="5">put</governor>
+            <dependent idx="4">will</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">people</governor>
+            <dependent idx="6">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">people</governor>
+            <dependent idx="7">American</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="5">put</governor>
+            <dependent idx="8">people</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="5">put</governor>
+            <dependent idx="9">first</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="5">put</governor>
+            <dependent idx="10">again</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">put</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="5">put</governor>
+            <dependent idx="1">Together</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">put</governor>
+            <dependent idx="3">we</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="5">put</governor>
+            <dependent idx="4">will</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">people</governor>
+            <dependent idx="6">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">people</governor>
+            <dependent idx="7">American</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="5">put</governor>
+            <dependent idx="8">people</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="5">put</governor>
+            <dependent idx="9">first</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="5">put</governor>
+            <dependent idx="10">again</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>First</word>
+            <lemma>first</lemma>
+            <CharacterOffsetBegin>55</CharacterOffsetBegin>
+            <CharacterOffsetEnd>60</CharacterOffsetEnd>
+            <POS>RB</POS>
+            <NER>ORDINAL</NER>
+            <NormalizedNER>1.0</NormalizedNER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="2">
+            <word>again</word>
+            <lemma>again</lemma>
+            <CharacterOffsetBegin>61</CharacterOffsetBegin>
+            <CharacterOffsetEnd>66</CharacterOffsetEnd>
+            <POS>RB</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="3">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>66</CharacterOffsetBegin>
+            <CharacterOffsetEnd>67</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+        </tokens>
+        <parse>(ROOT (FRAG (ADVP (RB First) (RB again)) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">again</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="2">again</governor>
+            <dependent idx="1">First</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">again</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="2">again</governor>
+            <dependent idx="1">First</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">again</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="2">again</governor>
+            <dependent idx="1">First</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+    <coreference>
+      <coreference>
+        <mention representative="true">
+          <sentence>1</sentence>
+          <start>9</start>
+          <end>10</end>
+          <head>9</head>
+          <text>first</text>
+        </mention>
+        <mention>
+          <sentence>2</sentence>
+          <start>1</start>
+          <end>2</end>
+          <head>1</head>
+          <text>First</text>
+        </mention>
+      </coreference>
+    </coreference>
+  </document>
+</root>
