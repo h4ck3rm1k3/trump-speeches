@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>We</word>
+            <lemma>we</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>2</CharacterOffsetEnd>
+            <POS>PRP</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="2">
+            <word>start</word>
+            <lemma>start</lemma>
+            <CharacterOffsetBegin>3</CharacterOffsetBegin>
+            <CharacterOffsetEnd>8</CharacterOffsetEnd>
+            <POS>VBP</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="3">
+            <word>by</word>
+            <lemma>by</lemma>
+            <CharacterOffsetBegin>9</CharacterOffsetBegin>
+            <CharacterOffsetEnd>11</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="4">
+            <word>paying</word>
+            <lemma>pay</lemma>
+            <CharacterOffsetBegin>12</CharacterOffsetBegin>
+            <CharacterOffsetEnd>18</CharacterOffsetEnd>
+            <POS>VBG</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="5">
+            <word>our</word>
+            <lemma>we</lemma>
+            <CharacterOffsetBegin>19</CharacterOffsetBegin>
+            <CharacterOffsetEnd>22</CharacterOffsetEnd>
+            <POS>PRP$</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="6">
+            <word>great</word>
+            <lemma>great</lemma>
+            <CharacterOffsetBegin>23</CharacterOffsetBegin>
+            <CharacterOffsetEnd>28</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="7">
+            <word>respects</word>
+            <lemma>respects</lemma>
+            <CharacterOffsetBegin>29</CharacterOffsetBegin>
+            <CharacterOffsetEnd>37</CharacterOffsetEnd>
+            <POS>NNS</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="8">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>38</CharacterOffsetBegin>
+            <CharacterOffsetEnd>40</CharacterOffsetEnd>
+            <POS>TO</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="9">
+            <word>Pearl</word>
+            <lemma>Pearl</lemma>
+            <CharacterOffsetBegin>41</CharacterOffsetBegin>
+            <CharacterOffsetEnd>46</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>LOCATION</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="10">
+            <word>Harbor</word>
+            <lemma>Harbor</lemma>
+            <CharacterOffsetBegin>47</CharacterOffsetBegin>
+            <CharacterOffsetEnd>53</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>LOCATION</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="11">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>53</CharacterOffsetBegin>
+            <CharacterOffsetEnd>54</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (PRP We)) (VP (VBP start) (PP (IN by) (S (VP (VBG paying) (NP (PRP$ our) (JJ great) (NNS respects)) (PP (TO to) (NP (NNP Pearl) (NNP Harbor))))))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">start</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="2">start</governor>
+            <dependent idx="1">We</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="2">start</governor>
+            <dependent idx="3">by</dependent>
+          </dep>
+          <dep type="pcomp">
+            <governor idx="3">by</governor>
+            <dependent idx="4">paying</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="7">respects</governor>
+            <dependent idx="5">our</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">respects</governor>
+            <dependent idx="6">great</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="4">paying</governor>
+            <dependent idx="7">respects</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="4">paying</governor>
+            <dependent idx="8">to</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">Harbor</governor>
+            <dependent idx="9">Pearl</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="8">to</governor>
+            <dependent idx="10">Harbor</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">start</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="2">start</governor>
+            <dependent idx="1">We</dependent>
+          </dep>
+          <dep type="prepc_by">
+            <governor idx="2">start</governor>
+            <dependent idx="4">paying</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="7">respects</governor>
+            <dependent idx="5">our</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">respects</governor>
+            <dependent idx="6">great</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="4">paying</governor>
+            <dependent idx="7">respects</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">Harbor</governor>
+            <dependent idx="9">Pearl</dependent>
+          </dep>
+          <dep type="prep_to">
+            <governor idx="4">paying</governor>
+            <dependent idx="10">Harbor</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">start</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="2">start</governor>
+            <dependent idx="1">We</dependent>
+          </dep>
+          <dep type="prepc_by">
+            <governor idx="2">start</governor>
+            <dependent idx="4">paying</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="7">respects</governor>
+            <dependent idx="5">our</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">respects</governor>
+            <dependent idx="6">great</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="4">paying</governor>
+            <dependent idx="7">respects</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">Harbor</governor>
+            <dependent idx="9">Pearl</dependent>
+          </dep>
+          <dep type="prep_to">
+            <governor idx="4">paying</governor>
+            <dependent idx="10">Harbor</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+    <coreference>
+      <coreference>
+        <mention representative="true">
+          <sentence>1</sentence>
+          <start>1</start>
+          <end>2</end>
+          <head>1</head>
+          <text>We</text>
+        </mention>
+        <mention>
+          <sentence>1</sentence>
+          <start>5</start>
+          <end>6</end>
+          <head>5</head>
+          <text>our</text>
+        </mention>
+      </coreference>
+    </coreference>
+  </document>
+</root>

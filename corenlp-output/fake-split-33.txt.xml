@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>stopping</word>
+            <lemma>stop</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>8</CharacterOffsetEnd>
+            <POS>VBG</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="2">
+            <word>nuclear</word>
+            <lemma>nuclear</lemma>
+            <CharacterOffsetBegin>9</CharacterOffsetBegin>
+            <CharacterOffsetEnd>16</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="3">
+            <word>weapons</word>
+            <lemma>weapon</lemma>
+            <CharacterOffsetBegin>17</CharacterOffsetBegin>
+            <CharacterOffsetEnd>24</CharacterOffsetEnd>
+            <POS>NNS</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="4">
+            <word>in</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>25</CharacterOffsetBegin>
+            <CharacterOffsetEnd>27</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="5">
+            <word>Iran</word>
+            <lemma>Iran</lemma>
+            <CharacterOffsetBegin>28</CharacterOffsetBegin>
+            <CharacterOffsetEnd>32</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>LOCATION</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="6">
+            <word>and</word>
+            <lemma>and</lemma>
+            <CharacterOffsetBegin>33</CharacterOffsetBegin>
+            <CharacterOffsetEnd>36</CharacterOffsetEnd>
+            <POS>CC</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="7">
+            <word>elsewhere</word>
+            <lemma>elsewhere</lemma>
+            <CharacterOffsetBegin>37</CharacterOffsetBegin>
+            <CharacterOffsetEnd>46</CharacterOffsetEnd>
+            <POS>RB</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="8">
+            <word>;</word>
+            <lemma>;</lemma>
+            <CharacterOffsetBegin>46</CharacterOffsetBegin>
+            <CharacterOffsetEnd>47</CharacterOffsetEnd>
+            <POS>:</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (VP (VBG stopping) (NP (JJ nuclear) (NNS weapons)) (PP (IN in) (NP (NP (NNP Iran)) (CC and) (NP (RB elsewhere))))) (: ;))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">stopping</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">weapons</governor>
+            <dependent idx="2">nuclear</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">stopping</governor>
+            <dependent idx="3">weapons</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="1">stopping</governor>
+            <dependent idx="4">in</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="4">in</governor>
+            <dependent idx="5">Iran</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="5">Iran</governor>
+            <dependent idx="6">and</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="5">Iran</governor>
+            <dependent idx="7">elsewhere</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">stopping</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">weapons</governor>
+            <dependent idx="2">nuclear</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">stopping</governor>
+            <dependent idx="3">weapons</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="1">stopping</governor>
+            <dependent idx="5">Iran</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="5">Iran</governor>
+            <dependent idx="7">elsewhere</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">stopping</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">weapons</governor>
+            <dependent idx="2">nuclear</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">stopping</governor>
+            <dependent idx="3">weapons</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="1">stopping</governor>
+            <dependent idx="5">Iran</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="1">stopping</governor>
+            <dependent idx="7">elsewhere</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="5">Iran</governor>
+            <dependent idx="7">elsewhere</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

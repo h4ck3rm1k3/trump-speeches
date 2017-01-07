@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>This</word>
+            <lemma>this</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>4</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="2">
+            <word>eliminates</word>
+            <lemma>eliminate</lemma>
+            <CharacterOffsetBegin>5</CharacterOffsetBegin>
+            <CharacterOffsetEnd>15</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="3">
+            <word>very</word>
+            <lemma>very</lemma>
+            <CharacterOffsetBegin>16</CharacterOffsetBegin>
+            <CharacterOffsetEnd>20</CharacterOffsetEnd>
+            <POS>RB</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="4">
+            <word>strongly</word>
+            <lemma>strongly</lemma>
+            <CharacterOffsetBegin>21</CharacterOffsetBegin>
+            <CharacterOffsetEnd>29</CharacterOffsetEnd>
+            <POS>RB</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="5">
+            <word>and</word>
+            <lemma>and</lemma>
+            <CharacterOffsetBegin>30</CharacterOffsetBegin>
+            <CharacterOffsetEnd>33</CharacterOffsetEnd>
+            <POS>CC</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="6">
+            <word>quickly</word>
+            <lemma>quickly</lemma>
+            <CharacterOffsetBegin>34</CharacterOffsetBegin>
+            <CharacterOffsetEnd>41</CharacterOffsetEnd>
+            <POS>RB</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="7">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>42</CharacterOffsetBegin>
+            <CharacterOffsetEnd>45</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="8">
+            <word>marriage</word>
+            <lemma>marriage</lemma>
+            <CharacterOffsetBegin>46</CharacterOffsetBegin>
+            <CharacterOffsetEnd>54</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="9">
+            <word>penalty</word>
+            <lemma>penalty</lemma>
+            <CharacterOffsetBegin>55</CharacterOffsetBegin>
+            <CharacterOffsetEnd>62</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="10">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>62</CharacterOffsetBegin>
+            <CharacterOffsetEnd>63</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (DT This)) (VP (VBZ eliminates) (ADVP (RB very) (RB strongly) (CC and) (RB quickly)) (NP (DT the) (NN marriage) (NN penalty))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">eliminates</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="2">eliminates</governor>
+            <dependent idx="1">This</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="4">strongly</governor>
+            <dependent idx="3">very</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="2">eliminates</governor>
+            <dependent idx="4">strongly</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="4">strongly</governor>
+            <dependent idx="5">and</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="4">strongly</governor>
+            <dependent idx="6">quickly</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="9">penalty</governor>
+            <dependent idx="7">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">penalty</governor>
+            <dependent idx="8">marriage</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="2">eliminates</governor>
+            <dependent idx="9">penalty</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">eliminates</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="2">eliminates</governor>
+            <dependent idx="1">This</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="4">strongly</governor>
+            <dependent idx="3">very</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="2">eliminates</governor>
+            <dependent idx="4">strongly</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="4">strongly</governor>
+            <dependent idx="6">quickly</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="9">penalty</governor>
+            <dependent idx="7">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">penalty</governor>
+            <dependent idx="8">marriage</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="2">eliminates</governor>
+            <dependent idx="9">penalty</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">eliminates</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="2">eliminates</governor>
+            <dependent idx="1">This</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="4">strongly</governor>
+            <dependent idx="3">very</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="2">eliminates</governor>
+            <dependent idx="4">strongly</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="2">eliminates</governor>
+            <dependent idx="6">quickly</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="4">strongly</governor>
+            <dependent idx="6">quickly</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="9">penalty</governor>
+            <dependent idx="7">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">penalty</governor>
+            <dependent idx="8">marriage</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="2">eliminates</governor>
+            <dependent idx="9">penalty</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>Very</word>
+            <lemma>very</lemma>
+            <CharacterOffsetBegin>64</CharacterOffsetBegin>
+            <CharacterOffsetEnd>68</CharacterOffsetEnd>
+            <POS>RB</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="2">
+            <word>unfair</word>
+            <lemma>unfair</lemma>
+            <CharacterOffsetBegin>69</CharacterOffsetBegin>
+            <CharacterOffsetEnd>75</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="3">
+            <word>penalty</word>
+            <lemma>penalty</lemma>
+            <CharacterOffsetBegin>76</CharacterOffsetBegin>
+            <CharacterOffsetEnd>83</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="4">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>83</CharacterOffsetBegin>
+            <CharacterOffsetEnd>84</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+        </tokens>
+        <parse>(ROOT (FRAG (ADVP (RB Very)) (NP (JJ unfair) (NN penalty)) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">penalty</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">penalty</governor>
+            <dependent idx="1">Very</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">penalty</governor>
+            <dependent idx="2">unfair</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">penalty</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">penalty</governor>
+            <dependent idx="1">Very</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">penalty</governor>
+            <dependent idx="2">unfair</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">penalty</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">penalty</governor>
+            <dependent idx="1">Very</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">penalty</governor>
+            <dependent idx="2">unfair</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

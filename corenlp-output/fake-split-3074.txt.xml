@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>What</word>
+            <lemma>what</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>4</CharacterOffsetEnd>
+            <POS>WP</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="2">
+            <word>happened</word>
+            <lemma>happen</lemma>
+            <CharacterOffsetBegin>5</CharacterOffsetBegin>
+            <CharacterOffsetEnd>13</CharacterOffsetEnd>
+            <POS>VBD</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="3">
+            <word>is</word>
+            <lemma>be</lemma>
+            <CharacterOffsetBegin>14</CharacterOffsetBegin>
+            <CharacterOffsetEnd>16</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="4">
+            <word>with</word>
+            <lemma>with</lemma>
+            <CharacterOffsetBegin>17</CharacterOffsetBegin>
+            <CharacterOffsetEnd>21</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="5">
+            <word>Paris</word>
+            <lemma>Paris</lemma>
+            <CharacterOffsetBegin>22</CharacterOffsetBegin>
+            <CharacterOffsetEnd>27</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>LOCATION</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="6">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>27</CharacterOffsetBegin>
+            <CharacterOffsetEnd>28</CharacterOffsetEnd>
+            <POS>,</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="7">
+            <word>there</word>
+            <lemma>there</lemma>
+            <CharacterOffsetBegin>29</CharacterOffsetBegin>
+            <CharacterOffsetEnd>34</CharacterOffsetEnd>
+            <POS>EX</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="8">
+            <word>'s</word>
+            <lemma>be</lemma>
+            <CharacterOffsetBegin>34</CharacterOffsetBegin>
+            <CharacterOffsetEnd>36</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="9">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>37</CharacterOffsetBegin>
+            <CharacterOffsetEnd>38</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="10">
+            <word>different</word>
+            <lemma>different</lemma>
+            <CharacterOffsetBegin>39</CharacterOffsetBegin>
+            <CharacterOffsetEnd>48</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="11">
+            <word>mindset</word>
+            <lemma>mindset</lemma>
+            <CharacterOffsetBegin>49</CharacterOffsetBegin>
+            <CharacterOffsetEnd>56</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="12">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>56</CharacterOffsetBegin>
+            <CharacterOffsetEnd>57</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (SBAR (WHNP (WP What)) (S (VP (VBD happened) (SBAR (S (VP (VBZ is) (PP (IN with) (NP (NNP Paris))))))))) (, ,) (NP (EX there)) (VP (VBZ 's) (NP (DT a) (JJ different) (NN mindset))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="8">'s</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="2">happened</governor>
+            <dependent idx="1">What</dependent>
+          </dep>
+          <dep type="advcl">
+            <governor idx="8">'s</governor>
+            <dependent idx="2">happened</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="2">happened</governor>
+            <dependent idx="3">is</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="3">is</governor>
+            <dependent idx="4">with</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="4">with</governor>
+            <dependent idx="5">Paris</dependent>
+          </dep>
+          <dep type="expl">
+            <governor idx="8">'s</governor>
+            <dependent idx="7">there</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="11">mindset</governor>
+            <dependent idx="9">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="11">mindset</governor>
+            <dependent idx="10">different</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="8">'s</governor>
+            <dependent idx="11">mindset</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="8">'s</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="2">happened</governor>
+            <dependent idx="1">What</dependent>
+          </dep>
+          <dep type="advcl">
+            <governor idx="8">'s</governor>
+            <dependent idx="2">happened</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="2">happened</governor>
+            <dependent idx="3">is</dependent>
+          </dep>
+          <dep type="prep_with">
+            <governor idx="3">is</governor>
+            <dependent idx="5">Paris</dependent>
+          </dep>
+          <dep type="expl">
+            <governor idx="8">'s</governor>
+            <dependent idx="7">there</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="11">mindset</governor>
+            <dependent idx="9">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="11">mindset</governor>
+            <dependent idx="10">different</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="8">'s</governor>
+            <dependent idx="11">mindset</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="8">'s</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="2">happened</governor>
+            <dependent idx="1">What</dependent>
+          </dep>
+          <dep type="advcl">
+            <governor idx="8">'s</governor>
+            <dependent idx="2">happened</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="2">happened</governor>
+            <dependent idx="3">is</dependent>
+          </dep>
+          <dep type="prep_with">
+            <governor idx="3">is</governor>
+            <dependent idx="5">Paris</dependent>
+          </dep>
+          <dep type="expl">
+            <governor idx="8">'s</governor>
+            <dependent idx="7">there</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="11">mindset</governor>
+            <dependent idx="9">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="11">mindset</governor>
+            <dependent idx="10">different</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="8">'s</governor>
+            <dependent idx="11">mindset</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

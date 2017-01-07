@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Somebody</word>
+            <lemma>somebody</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>8</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="2">
+            <word>said</word>
+            <lemma>say</lemma>
+            <CharacterOffsetBegin>9</CharacterOffsetBegin>
+            <CharacterOffsetEnd>13</CharacterOffsetEnd>
+            <POS>VBD</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="3">
+            <word>``</word>
+            <lemma>``</lemma>
+            <CharacterOffsetBegin>14</CharacterOffsetBegin>
+            <CharacterOffsetEnd>15</CharacterOffsetEnd>
+            <POS>``</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>Oh</word>
+            <lemma>oh</lemma>
+            <CharacterOffsetBegin>15</CharacterOffsetBegin>
+            <CharacterOffsetEnd>17</CharacterOffsetEnd>
+            <POS>UH</POS>
+            <NER>O</NER>
+            <Speaker>Somebody</Speaker>
+          </token>
+          <token id="5">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>17</CharacterOffsetBegin>
+            <CharacterOffsetEnd>18</CharacterOffsetEnd>
+            <POS>,</POS>
+            <NER>O</NER>
+            <Speaker>Somebody</Speaker>
+          </token>
+          <token id="6">
+            <word>why</word>
+            <lemma>why</lemma>
+            <CharacterOffsetBegin>19</CharacterOffsetBegin>
+            <CharacterOffsetEnd>22</CharacterOffsetEnd>
+            <POS>WRB</POS>
+            <NER>O</NER>
+            <Speaker>Somebody</Speaker>
+          </token>
+          <token id="7">
+            <word>is</word>
+            <lemma>be</lemma>
+            <CharacterOffsetBegin>23</CharacterOffsetBegin>
+            <CharacterOffsetEnd>25</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+            <NER>O</NER>
+            <Speaker>Somebody</Speaker>
+          </token>
+          <token id="8">
+            <word>n't</word>
+            <lemma>not</lemma>
+            <CharacterOffsetBegin>25</CharacterOffsetBegin>
+            <CharacterOffsetEnd>28</CharacterOffsetEnd>
+            <POS>RB</POS>
+            <NER>O</NER>
+            <Speaker>Somebody</Speaker>
+          </token>
+          <token id="9">
+            <word>everybody</word>
+            <lemma>everybody</lemma>
+            <CharacterOffsetBegin>29</CharacterOffsetBegin>
+            <CharacterOffsetEnd>38</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+            <Speaker>Somebody</Speaker>
+          </token>
+          <token id="10">
+            <word>paying</word>
+            <lemma>pay</lemma>
+            <CharacterOffsetBegin>39</CharacterOffsetBegin>
+            <CharacterOffsetEnd>45</CharacterOffsetEnd>
+            <POS>VBG</POS>
+            <NER>O</NER>
+            <Speaker>Somebody</Speaker>
+          </token>
+          <token id="11">
+            <word>?</word>
+            <lemma>?</lemma>
+            <CharacterOffsetBegin>45</CharacterOffsetBegin>
+            <CharacterOffsetEnd>46</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+            <Speaker>Somebody</Speaker>
+          </token>
+          <token id="12">
+            <word>''</word>
+            <lemma>''</lemma>
+            <CharacterOffsetBegin>46</CharacterOffsetBegin>
+            <CharacterOffsetEnd>47</CharacterOffsetEnd>
+            <POS>''</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+        </tokens>
+        <parse>(ROOT (SBAR (S (NP (NN Somebody)) (VP (VBD said) (INTJ (`` ``) (UH Oh))) (, ,) (SBAR (WHADVP (WRB why)) (S (VP (VBZ is) (RB n't) (NP (NP (NN everybody)) (VP (VBG paying))))))) (. ?) ('' ''))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">said</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="2">said</governor>
+            <dependent idx="1">Somebody</dependent>
+          </dep>
+          <dep type="discourse">
+            <governor idx="2">said</governor>
+            <dependent idx="4">Oh</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="9">everybody</governor>
+            <dependent idx="6">why</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="9">everybody</governor>
+            <dependent idx="7">is</dependent>
+          </dep>
+          <dep type="neg">
+            <governor idx="9">everybody</governor>
+            <dependent idx="8">n't</dependent>
+          </dep>
+          <dep type="advcl">
+            <governor idx="2">said</governor>
+            <dependent idx="9">everybody</dependent>
+          </dep>
+          <dep type="partmod">
+            <governor idx="9">everybody</governor>
+            <dependent idx="10">paying</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">said</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="2">said</governor>
+            <dependent idx="1">Somebody</dependent>
+          </dep>
+          <dep type="discourse">
+            <governor idx="2">said</governor>
+            <dependent idx="4">Oh</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="9">everybody</governor>
+            <dependent idx="6">why</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="9">everybody</governor>
+            <dependent idx="7">is</dependent>
+          </dep>
+          <dep type="neg">
+            <governor idx="9">everybody</governor>
+            <dependent idx="8">n't</dependent>
+          </dep>
+          <dep type="advcl">
+            <governor idx="2">said</governor>
+            <dependent idx="9">everybody</dependent>
+          </dep>
+          <dep type="partmod">
+            <governor idx="9">everybody</governor>
+            <dependent idx="10">paying</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">said</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="2">said</governor>
+            <dependent idx="1">Somebody</dependent>
+          </dep>
+          <dep type="discourse">
+            <governor idx="2">said</governor>
+            <dependent idx="4">Oh</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="9">everybody</governor>
+            <dependent idx="6">why</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="9">everybody</governor>
+            <dependent idx="7">is</dependent>
+          </dep>
+          <dep type="neg">
+            <governor idx="9">everybody</governor>
+            <dependent idx="8">n't</dependent>
+          </dep>
+          <dep type="advcl">
+            <governor idx="2">said</governor>
+            <dependent idx="9">everybody</dependent>
+          </dep>
+          <dep type="partmod">
+            <governor idx="9">everybody</governor>
+            <dependent idx="10">paying</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

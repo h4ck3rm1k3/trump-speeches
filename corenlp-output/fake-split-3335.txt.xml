@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>...</word>
+            <lemma>...</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>1</CharacterOffsetEnd>
+            <POS>:</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="2">
+            <word>They</word>
+            <lemma>they</lemma>
+            <CharacterOffsetBegin>1</CharacterOffsetBegin>
+            <CharacterOffsetEnd>5</CharacterOffsetEnd>
+            <POS>PRP</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="3">
+            <word>'d</word>
+            <lemma>would</lemma>
+            <CharacterOffsetBegin>5</CharacterOffsetBegin>
+            <CharacterOffsetEnd>7</CharacterOffsetEnd>
+            <POS>MD</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="4">
+            <word>be</word>
+            <lemma>be</lemma>
+            <CharacterOffsetBegin>8</CharacterOffsetBegin>
+            <CharacterOffsetEnd>10</CharacterOffsetEnd>
+            <POS>VB</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="5">
+            <word>interviewed</word>
+            <lemma>interview</lemma>
+            <CharacterOffsetBegin>11</CharacterOffsetBegin>
+            <CharacterOffsetEnd>22</CharacterOffsetEnd>
+            <POS>VBN</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="6">
+            <word>after</word>
+            <lemma>after</lemma>
+            <CharacterOffsetBegin>23</CharacterOffsetBegin>
+            <CharacterOffsetEnd>28</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="7">
+            <word>total</word>
+            <lemma>total</lemma>
+            <CharacterOffsetBegin>29</CharacterOffsetBegin>
+            <CharacterOffsetEnd>34</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="8">
+            <word>and</word>
+            <lemma>and</lemma>
+            <CharacterOffsetBegin>35</CharacterOffsetBegin>
+            <CharacterOffsetEnd>38</CharacterOffsetEnd>
+            <POS>CC</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="9">
+            <word>complete</word>
+            <lemma>complete</lemma>
+            <CharacterOffsetBegin>39</CharacterOffsetBegin>
+            <CharacterOffsetEnd>47</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="10">
+            <word>victory</word>
+            <lemma>victory</lemma>
+            <CharacterOffsetBegin>48</CharacterOffsetBegin>
+            <CharacterOffsetEnd>55</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="11">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>55</CharacterOffsetBegin>
+            <CharacterOffsetEnd>56</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (: ...) (NP (PRP They)) (VP (MD 'd) (VP (VB be) (VP (VBN interviewed) (PP (IN after) (NP (ADJP (JJ total) (CC and) (JJ complete)) (NN victory)))))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">interviewed</dependent>
+          </dep>
+          <dep type="nsubjpass">
+            <governor idx="5">interviewed</governor>
+            <dependent idx="2">They</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="5">interviewed</governor>
+            <dependent idx="3">'d</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="5">interviewed</governor>
+            <dependent idx="4">be</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="5">interviewed</governor>
+            <dependent idx="6">after</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">victory</governor>
+            <dependent idx="7">total</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="7">total</governor>
+            <dependent idx="8">and</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="7">total</governor>
+            <dependent idx="9">complete</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="6">after</governor>
+            <dependent idx="10">victory</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">interviewed</dependent>
+          </dep>
+          <dep type="nsubjpass">
+            <governor idx="5">interviewed</governor>
+            <dependent idx="2">They</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="5">interviewed</governor>
+            <dependent idx="3">'d</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="5">interviewed</governor>
+            <dependent idx="4">be</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">victory</governor>
+            <dependent idx="7">total</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="7">total</governor>
+            <dependent idx="9">complete</dependent>
+          </dep>
+          <dep type="prep_after">
+            <governor idx="5">interviewed</governor>
+            <dependent idx="10">victory</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">interviewed</dependent>
+          </dep>
+          <dep type="nsubjpass">
+            <governor idx="5">interviewed</governor>
+            <dependent idx="2">They</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="5">interviewed</governor>
+            <dependent idx="3">'d</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="5">interviewed</governor>
+            <dependent idx="4">be</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">victory</governor>
+            <dependent idx="7">total</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="7">total</governor>
+            <dependent idx="9">complete</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">victory</governor>
+            <dependent idx="9">complete</dependent>
+          </dep>
+          <dep type="prep_after">
+            <governor idx="5">interviewed</governor>
+            <dependent idx="10">victory</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>America</word>
+            <lemma>America</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>7</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>LOCATION</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="2">
+            <word>'s</word>
+            <lemma>'s</lemma>
+            <CharacterOffsetBegin>7</CharacterOffsetBegin>
+            <CharacterOffsetEnd>9</CharacterOffsetEnd>
+            <POS>POS</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="3">
+            <word>Vetdogs</word>
+            <lemma>Vetdogs</lemma>
+            <CharacterOffsetBegin>10</CharacterOffsetBegin>
+            <CharacterOffsetEnd>17</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="4">
+            <word>--</word>
+            <lemma>--</lemma>
+            <CharacterOffsetBegin>18</CharacterOffsetBegin>
+            <CharacterOffsetEnd>19</CharacterOffsetEnd>
+            <POS>:</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="5">
+            <word>The</word>
+            <lemma>The</lemma>
+            <CharacterOffsetBegin>20</CharacterOffsetBegin>
+            <CharacterOffsetEnd>23</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="6">
+            <word>Veterans</word>
+            <lemma>Veterans</lemma>
+            <CharacterOffsetBegin>24</CharacterOffsetBegin>
+            <CharacterOffsetEnd>32</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="7">
+            <word>'</word>
+            <lemma>'</lemma>
+            <CharacterOffsetBegin>32</CharacterOffsetBegin>
+            <CharacterOffsetEnd>33</CharacterOffsetEnd>
+            <POS>POS</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="8">
+            <word>K-9</word>
+            <lemma>K-9</lemma>
+            <CharacterOffsetBegin>34</CharacterOffsetBegin>
+            <CharacterOffsetEnd>37</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="9">
+            <word>Corps</word>
+            <lemma>Corps</lemma>
+            <CharacterOffsetBegin>38</CharacterOffsetBegin>
+            <CharacterOffsetEnd>43</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="10">
+            <word>Inc.</word>
+            <lemma>Inc.</lemma>
+            <CharacterOffsetBegin>44</CharacterOffsetBegin>
+            <CharacterOffsetEnd>48</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="11">
+            <word>--</word>
+            <lemma>--</lemma>
+            <CharacterOffsetBegin>49</CharacterOffsetBegin>
+            <CharacterOffsetEnd>50</CharacterOffsetEnd>
+            <POS>:</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="12">
+            <word>$</word>
+            <lemma>$</lemma>
+            <CharacterOffsetBegin>51</CharacterOffsetBegin>
+            <CharacterOffsetEnd>52</CharacterOffsetEnd>
+            <POS>$</POS>
+            <NER>MONEY</NER>
+            <NormalizedNER>$75000.0</NormalizedNER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="13">
+            <word>75,000</word>
+            <lemma>75,000</lemma>
+            <CharacterOffsetBegin>52</CharacterOffsetBegin>
+            <CharacterOffsetEnd>58</CharacterOffsetEnd>
+            <POS>CD</POS>
+            <NER>MONEY</NER>
+            <NormalizedNER>$75000.0</NormalizedNER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="14">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>58</CharacterOffsetBegin>
+            <CharacterOffsetEnd>59</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (NP (NP (NNP America) (POS 's)) (NNP Vetdogs)) (: --) (NP (NP (NNP The) (NNP Veterans) (POS ')) (NNP K-9) (NNP Corps) (NNP Inc.))) (: --) (NP ($ $) (CD 75,000)) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">Vetdogs</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="3">Vetdogs</governor>
+            <dependent idx="1">America</dependent>
+          </dep>
+          <dep type="possessive">
+            <governor idx="1">America</governor>
+            <dependent idx="2">'s</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">Veterans</governor>
+            <dependent idx="5">The</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="10">Inc.</governor>
+            <dependent idx="6">Veterans</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">Inc.</governor>
+            <dependent idx="8">K-9</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">Inc.</governor>
+            <dependent idx="9">Corps</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">Vetdogs</governor>
+            <dependent idx="10">Inc.</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">Vetdogs</governor>
+            <dependent idx="12">$</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="12">$</governor>
+            <dependent idx="13">75,000</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">Vetdogs</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="3">Vetdogs</governor>
+            <dependent idx="1">America</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">Veterans</governor>
+            <dependent idx="5">The</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="10">Inc.</governor>
+            <dependent idx="6">Veterans</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">Inc.</governor>
+            <dependent idx="8">K-9</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">Inc.</governor>
+            <dependent idx="9">Corps</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">Vetdogs</governor>
+            <dependent idx="10">Inc.</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">Vetdogs</governor>
+            <dependent idx="12">$</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="12">$</governor>
+            <dependent idx="13">75,000</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">Vetdogs</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="3">Vetdogs</governor>
+            <dependent idx="1">America</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">Veterans</governor>
+            <dependent idx="5">The</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="10">Inc.</governor>
+            <dependent idx="6">Veterans</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">Inc.</governor>
+            <dependent idx="8">K-9</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">Inc.</governor>
+            <dependent idx="9">Corps</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">Vetdogs</governor>
+            <dependent idx="10">Inc.</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">Vetdogs</governor>
+            <dependent idx="12">$</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="12">$</governor>
+            <dependent idx="13">75,000</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

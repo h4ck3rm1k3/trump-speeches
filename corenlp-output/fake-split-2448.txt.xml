@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>But</word>
+            <lemma>but</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>CC</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="2">
+            <word>people</word>
+            <lemma>people</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>10</CharacterOffsetEnd>
+            <POS>NNS</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="3">
+            <word>are</word>
+            <lemma>be</lemma>
+            <CharacterOffsetBegin>11</CharacterOffsetBegin>
+            <CharacterOffsetEnd>14</CharacterOffsetEnd>
+            <POS>VBP</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="4">
+            <word>fed</word>
+            <lemma>feed</lemma>
+            <CharacterOffsetBegin>15</CharacterOffsetBegin>
+            <CharacterOffsetEnd>18</CharacterOffsetEnd>
+            <POS>VBN</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="5">
+            <word>up</word>
+            <lemma>up</lemma>
+            <CharacterOffsetBegin>19</CharacterOffsetBegin>
+            <CharacterOffsetEnd>21</CharacterOffsetEnd>
+            <POS>RP</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="6">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>21</CharacterOffsetBegin>
+            <CharacterOffsetEnd>22</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (CC But) (NP (NNS people)) (VP (VBP are) (VP (VBN fed) (PRT (RP up)))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">fed</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="4">fed</governor>
+            <dependent idx="1">But</dependent>
+          </dep>
+          <dep type="nsubjpass">
+            <governor idx="4">fed</governor>
+            <dependent idx="2">people</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="4">fed</governor>
+            <dependent idx="3">are</dependent>
+          </dep>
+          <dep type="prt">
+            <governor idx="4">fed</governor>
+            <dependent idx="5">up</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">fed</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="4">fed</governor>
+            <dependent idx="1">But</dependent>
+          </dep>
+          <dep type="nsubjpass">
+            <governor idx="4">fed</governor>
+            <dependent idx="2">people</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="4">fed</governor>
+            <dependent idx="3">are</dependent>
+          </dep>
+          <dep type="prt">
+            <governor idx="4">fed</governor>
+            <dependent idx="5">up</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">fed</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="4">fed</governor>
+            <dependent idx="1">But</dependent>
+          </dep>
+          <dep type="nsubjpass">
+            <governor idx="4">fed</governor>
+            <dependent idx="2">people</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="4">fed</governor>
+            <dependent idx="3">are</dependent>
+          </dep>
+          <dep type="prt">
+            <governor idx="4">fed</governor>
+            <dependent idx="5">up</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>800,000</word>
+            <lemma>800,000</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>7</CharacterOffsetEnd>
+            <POS>CD</POS>
+            <NER>NUMBER</NER>
+            <NormalizedNER>800000.0</NormalizedNER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="2">
+            <word>food</word>
+            <lemma>food</lemma>
+            <CharacterOffsetBegin>8</CharacterOffsetBegin>
+            <CharacterOffsetEnd>12</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="3">
+            <word>stamp</word>
+            <lemma>stamp</lemma>
+            <CharacterOffsetBegin>13</CharacterOffsetBegin>
+            <CharacterOffsetEnd>18</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="4">
+            <word>recipients</word>
+            <lemma>recipient</lemma>
+            <CharacterOffsetBegin>19</CharacterOffsetBegin>
+            <CharacterOffsetEnd>29</CharacterOffsetEnd>
+            <POS>NNS</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="5">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>29</CharacterOffsetBegin>
+            <CharacterOffsetEnd>30</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (CD 800,000) (NN food)) (NP (NN stamp) (NNS recipients)) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">food</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="2">food</governor>
+            <dependent idx="1">800,000</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">recipients</governor>
+            <dependent idx="3">stamp</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">food</governor>
+            <dependent idx="4">recipients</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">food</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="2">food</governor>
+            <dependent idx="1">800,000</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">recipients</governor>
+            <dependent idx="3">stamp</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">food</governor>
+            <dependent idx="4">recipients</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">food</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="2">food</governor>
+            <dependent idx="1">800,000</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">recipients</governor>
+            <dependent idx="3">stamp</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">food</governor>
+            <dependent idx="4">recipients</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

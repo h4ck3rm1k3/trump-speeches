@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Actually</word>
+            <lemma>actually</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>8</CharacterOffsetEnd>
+            <POS>RB</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="2">
+            <word>now</word>
+            <lemma>now</lemma>
+            <CharacterOffsetBegin>9</CharacterOffsetBegin>
+            <CharacterOffsetEnd>12</CharacterOffsetEnd>
+            <POS>RB</POS>
+            <NER>DATE</NER>
+            <NormalizedNER>PRESENT_REF</NormalizedNER>
+            <Speaker>PER0</Speaker>
+            <Timex tid="t1" type="DATE">PRESENT_REF</Timex>
+          </token>
+          <token id="3">
+            <word>according</word>
+            <lemma>accord</lemma>
+            <CharacterOffsetBegin>13</CharacterOffsetBegin>
+            <CharacterOffsetEnd>22</CharacterOffsetEnd>
+            <POS>VBG</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="4">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>23</CharacterOffsetBegin>
+            <CharacterOffsetEnd>25</CharacterOffsetEnd>
+            <POS>TO</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="5">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>26</CharacterOffsetBegin>
+            <CharacterOffsetEnd>29</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="6">
+            <word>Economist</word>
+            <lemma>Economist</lemma>
+            <CharacterOffsetBegin>30</CharacterOffsetBegin>
+            <CharacterOffsetEnd>39</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="7">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>39</CharacterOffsetBegin>
+            <CharacterOffsetEnd>40</CharacterOffsetEnd>
+            <POS>,</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="8">
+            <word>I</word>
+            <lemma>I</lemma>
+            <CharacterOffsetBegin>41</CharacterOffsetBegin>
+            <CharacterOffsetEnd>42</CharacterOffsetEnd>
+            <POS>PRP</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="9">
+            <word>'m</word>
+            <lemma>be</lemma>
+            <CharacterOffsetBegin>42</CharacterOffsetBegin>
+            <CharacterOffsetEnd>44</CharacterOffsetEnd>
+            <POS>VBP</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="10">
+            <word>at</word>
+            <lemma>at</lemma>
+            <CharacterOffsetBegin>45</CharacterOffsetBegin>
+            <CharacterOffsetEnd>47</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="11">
+            <word>53</word>
+            <lemma>53</lemma>
+            <CharacterOffsetBegin>48</CharacterOffsetBegin>
+            <CharacterOffsetEnd>50</CharacterOffsetEnd>
+            <POS>CD</POS>
+            <NER>PERCENT</NER>
+            <NormalizedNER>%53.0</NormalizedNER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="12">
+            <word>%</word>
+            <lemma>%</lemma>
+            <CharacterOffsetBegin>50</CharacterOffsetBegin>
+            <CharacterOffsetEnd>51</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>PERCENT</NER>
+            <NormalizedNER>%53.0</NormalizedNER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="13">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>51</CharacterOffsetBegin>
+            <CharacterOffsetEnd>52</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+        </tokens>
+        <parse>(ROOT (FRAG (ADVP (RB Actually)) (SBAR (RB now) (S (PP (VBG according) (PP (TO to) (NP (DT the) (NNP Economist)))) (, ,) (NP (PRP I)) (VP (VBP 'm) (PP (IN at) (NP (CD 53) (NN %)))))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">Actually</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="9">'m</governor>
+            <dependent idx="2">now</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="9">'m</governor>
+            <dependent idx="3">according</dependent>
+          </dep>
+          <dep type="pcomp">
+            <governor idx="3">according</governor>
+            <dependent idx="4">to</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="6">Economist</governor>
+            <dependent idx="5">the</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="4">to</governor>
+            <dependent idx="6">Economist</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="9">'m</governor>
+            <dependent idx="8">I</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">Actually</governor>
+            <dependent idx="9">'m</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="9">'m</governor>
+            <dependent idx="10">at</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="12">%</governor>
+            <dependent idx="11">53</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="10">at</governor>
+            <dependent idx="12">%</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">Actually</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="9">'m</governor>
+            <dependent idx="2">now</dependent>
+          </dep>
+          <dep type="prepc_according_to">
+            <governor idx="9">'m</governor>
+            <dependent idx="4">to</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="6">Economist</governor>
+            <dependent idx="5">the</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="9">'m</governor>
+            <dependent idx="6">Economist</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="9">'m</governor>
+            <dependent idx="8">I</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">Actually</governor>
+            <dependent idx="9">'m</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="12">%</governor>
+            <dependent idx="11">53</dependent>
+          </dep>
+          <dep type="prep_at">
+            <governor idx="9">'m</governor>
+            <dependent idx="12">%</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">Actually</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="9">'m</governor>
+            <dependent idx="2">now</dependent>
+          </dep>
+          <dep type="prepc_according_to">
+            <governor idx="9">'m</governor>
+            <dependent idx="4">to</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="6">Economist</governor>
+            <dependent idx="5">the</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="9">'m</governor>
+            <dependent idx="6">Economist</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="9">'m</governor>
+            <dependent idx="8">I</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">Actually</governor>
+            <dependent idx="9">'m</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="12">%</governor>
+            <dependent idx="11">53</dependent>
+          </dep>
+          <dep type="prep_at">
+            <governor idx="9">'m</governor>
+            <dependent idx="12">%</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

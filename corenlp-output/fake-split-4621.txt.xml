@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>So</word>
+            <lemma>so</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>2</CharacterOffsetEnd>
+            <POS>RB</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="2">
+            <word>anyways</word>
+            <lemma>anyways</lemma>
+            <CharacterOffsetBegin>3</CharacterOffsetBegin>
+            <CharacterOffsetEnd>10</CharacterOffsetEnd>
+            <POS>RB</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="3">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>10</CharacterOffsetBegin>
+            <CharacterOffsetEnd>11</CharacterOffsetEnd>
+            <POS>,</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="4">
+            <word>who</word>
+            <lemma>who</lemma>
+            <CharacterOffsetBegin>12</CharacterOffsetBegin>
+            <CharacterOffsetEnd>15</CharacterOffsetEnd>
+            <POS>WP</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="5">
+            <word>cares</word>
+            <lemma>care</lemma>
+            <CharacterOffsetBegin>16</CharacterOffsetBegin>
+            <CharacterOffsetEnd>21</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="6">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>21</CharacterOffsetBegin>
+            <CharacterOffsetEnd>22</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+        </tokens>
+        <parse>(ROOT (SBARQ (FRAG (RB So) (ADVP (RB anyways))) (, ,) (SBARQ (WHNP (WP who)) (SQ (VP (VBZ cares)))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">cares</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="5">cares</governor>
+            <dependent idx="1">So</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">So</governor>
+            <dependent idx="2">anyways</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">cares</governor>
+            <dependent idx="4">who</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">cares</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="5">cares</governor>
+            <dependent idx="1">So</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">So</governor>
+            <dependent idx="2">anyways</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">cares</governor>
+            <dependent idx="4">who</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">cares</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="5">cares</governor>
+            <dependent idx="1">So</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">So</governor>
+            <dependent idx="2">anyways</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">cares</governor>
+            <dependent idx="4">who</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

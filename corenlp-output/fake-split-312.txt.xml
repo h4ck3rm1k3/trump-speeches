@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Fully</word>
+            <lemma>fully</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>5</CharacterOffsetEnd>
+            <POS>RB</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="2">
+            <word>support</word>
+            <lemma>support</lemma>
+            <CharacterOffsetBegin>6</CharacterOffsetBegin>
+            <CharacterOffsetEnd>13</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="3">
+            <word>and</word>
+            <lemma>and</lemma>
+            <CharacterOffsetBegin>14</CharacterOffsetBegin>
+            <CharacterOffsetEnd>17</CharacterOffsetEnd>
+            <POS>CC</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="4">
+            <word>back</word>
+            <lemma>back</lemma>
+            <CharacterOffsetBegin>18</CharacterOffsetBegin>
+            <CharacterOffsetEnd>22</CharacterOffsetEnd>
+            <POS>RB</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="5">
+            <word>up</word>
+            <lemma>up</lemma>
+            <CharacterOffsetBegin>23</CharacterOffsetBegin>
+            <CharacterOffsetEnd>25</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="6">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>26</CharacterOffsetBegin>
+            <CharacterOffsetEnd>29</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="7">
+            <word>Second</word>
+            <lemma>second</lemma>
+            <CharacterOffsetBegin>30</CharacterOffsetBegin>
+            <CharacterOffsetEnd>36</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>ORDINAL</NER>
+            <NormalizedNER>2.0</NormalizedNER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="8">
+            <word>Amendment</word>
+            <lemma>amendment</lemma>
+            <CharacterOffsetBegin>37</CharacterOffsetBegin>
+            <CharacterOffsetEnd>46</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>MISC</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="9">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>46</CharacterOffsetBegin>
+            <CharacterOffsetEnd>47</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (NP (RB Fully) (NN support)) (CC and) (ADVP (RB back) (IN up)) (NP (DT the) (JJ Second) (NN Amendment))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">support</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="2">support</governor>
+            <dependent idx="1">Fully</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="2">support</governor>
+            <dependent idx="3">and</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="5">up</governor>
+            <dependent idx="4">back</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="2">support</governor>
+            <dependent idx="5">up</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">Amendment</governor>
+            <dependent idx="6">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">Amendment</governor>
+            <dependent idx="7">Second</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="2">support</governor>
+            <dependent idx="8">Amendment</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">support</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="2">support</governor>
+            <dependent idx="1">Fully</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="5">up</governor>
+            <dependent idx="4">back</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="2">support</governor>
+            <dependent idx="5">up</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">Amendment</governor>
+            <dependent idx="6">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">Amendment</governor>
+            <dependent idx="7">Second</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="2">support</governor>
+            <dependent idx="8">Amendment</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">support</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="2">support</governor>
+            <dependent idx="1">Fully</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="5">up</governor>
+            <dependent idx="4">back</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="2">support</governor>
+            <dependent idx="5">up</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">Amendment</governor>
+            <dependent idx="6">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">Amendment</governor>
+            <dependent idx="7">Second</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="2">support</governor>
+            <dependent idx="8">Amendment</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

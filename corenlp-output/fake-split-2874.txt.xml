@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>-LRB-</word>
+            <lemma>-lrb-</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>1</CharacterOffsetEnd>
+            <POS>-LRB-</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="2">
+            <word>AUDIENCE</word>
+            <lemma>audience</lemma>
+            <CharacterOffsetBegin>1</CharacterOffsetBegin>
+            <CharacterOffsetEnd>9</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="3">
+            <word>MEMBERS</word>
+            <lemma>member</lemma>
+            <CharacterOffsetBegin>10</CharacterOffsetBegin>
+            <CharacterOffsetEnd>17</CharacterOffsetEnd>
+            <POS>NNS</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="4">
+            <word>SHOUTING</word>
+            <lemma>shout</lemma>
+            <CharacterOffsetBegin>18</CharacterOffsetBegin>
+            <CharacterOffsetEnd>26</CharacterOffsetEnd>
+            <POS>VBG</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="5">
+            <word>-RRB-</word>
+            <lemma>-rrb-</lemma>
+            <CharacterOffsetBegin>26</CharacterOffsetBegin>
+            <CharacterOffsetEnd>27</CharacterOffsetEnd>
+            <POS>-RRB-</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+        </tokens>
+        <parse>(ROOT (PRN (-LRB- -LRB-) (S (NP (NN AUDIENCE) (NNS MEMBERS)) (VP (VBG SHOUTING))) (-RRB- -RRB-))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">SHOUTING</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">MEMBERS</governor>
+            <dependent idx="2">AUDIENCE</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">SHOUTING</governor>
+            <dependent idx="3">MEMBERS</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">SHOUTING</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">MEMBERS</governor>
+            <dependent idx="2">AUDIENCE</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">SHOUTING</governor>
+            <dependent idx="3">MEMBERS</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">SHOUTING</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">MEMBERS</governor>
+            <dependent idx="2">AUDIENCE</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">SHOUTING</governor>
+            <dependent idx="3">MEMBERS</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

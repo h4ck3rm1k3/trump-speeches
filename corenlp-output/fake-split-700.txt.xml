@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Remember</word>
+            <lemma>remember</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>8</CharacterOffsetEnd>
+            <POS>VB</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="2">
+            <word>this</word>
+            <lemma>this</lemma>
+            <CharacterOffsetBegin>9</CharacterOffsetBegin>
+            <CharacterOffsetEnd>13</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="3">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>13</CharacterOffsetBegin>
+            <CharacterOffsetEnd>14</CharacterOffsetEnd>
+            <POS>,</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="4">
+            <word>radical</word>
+            <lemma>radical</lemma>
+            <CharacterOffsetBegin>15</CharacterOffsetBegin>
+            <CharacterOffsetEnd>22</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="5">
+            <word>Islam</word>
+            <lemma>Islam</lemma>
+            <CharacterOffsetBegin>23</CharacterOffsetBegin>
+            <CharacterOffsetEnd>28</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>MISC</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="6">
+            <word>is</word>
+            <lemma>be</lemma>
+            <CharacterOffsetBegin>29</CharacterOffsetBegin>
+            <CharacterOffsetEnd>31</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="7">
+            <word>anti-woman</word>
+            <lemma>anti-woman</lemma>
+            <CharacterOffsetBegin>32</CharacterOffsetBegin>
+            <CharacterOffsetEnd>42</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="8">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>42</CharacterOffsetBegin>
+            <CharacterOffsetEnd>43</CharacterOffsetEnd>
+            <POS>,</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="9">
+            <word>anti-gay</word>
+            <lemma>anti-gay</lemma>
+            <CharacterOffsetBegin>44</CharacterOffsetBegin>
+            <CharacterOffsetEnd>52</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="10">
+            <word>and</word>
+            <lemma>and</lemma>
+            <CharacterOffsetBegin>53</CharacterOffsetBegin>
+            <CharacterOffsetEnd>56</CharacterOffsetEnd>
+            <POS>CC</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="11">
+            <word>anti-</word>
+            <lemma>anti-</lemma>
+            <CharacterOffsetBegin>57</CharacterOffsetBegin>
+            <CharacterOffsetEnd>62</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="12">
+            <word>American</word>
+            <lemma>american</lemma>
+            <CharacterOffsetBegin>63</CharacterOffsetBegin>
+            <CharacterOffsetEnd>71</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>MISC</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="13">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>71</CharacterOffsetBegin>
+            <CharacterOffsetEnd>72</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (S (VP (VB Remember) (NP (DT this)))) (, ,) (NP (JJ radical) (NNP Islam)) (VP (VBZ is) (NP (ADJP (JJ anti-woman) (, ,) (JJ anti-gay) (CC and) (JJ anti-)) (JJ American))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="7">anti-woman</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="7">anti-woman</governor>
+            <dependent idx="1">Remember</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">Remember</governor>
+            <dependent idx="2">this</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">Islam</governor>
+            <dependent idx="4">radical</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="7">anti-woman</governor>
+            <dependent idx="5">Islam</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="7">anti-woman</governor>
+            <dependent idx="6">is</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="7">anti-woman</governor>
+            <dependent idx="9">anti-gay</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="7">anti-woman</governor>
+            <dependent idx="10">and</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="7">anti-woman</governor>
+            <dependent idx="11">anti-</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">anti-woman</governor>
+            <dependent idx="12">American</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="7">anti-woman</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="7">anti-woman</governor>
+            <dependent idx="1">Remember</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">Remember</governor>
+            <dependent idx="2">this</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">Islam</governor>
+            <dependent idx="4">radical</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="7">anti-woman</governor>
+            <dependent idx="5">Islam</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="7">anti-woman</governor>
+            <dependent idx="6">is</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="7">anti-woman</governor>
+            <dependent idx="9">anti-gay</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="7">anti-woman</governor>
+            <dependent idx="11">anti-</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">anti-woman</governor>
+            <dependent idx="12">American</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="7">anti-woman</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="7">anti-woman</governor>
+            <dependent idx="1">Remember</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">Remember</governor>
+            <dependent idx="2">this</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">Islam</governor>
+            <dependent idx="4">radical</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="7">anti-woman</governor>
+            <dependent idx="5">Islam</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="9">anti-gay</governor>
+            <dependent idx="5">Islam</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="11">anti-</governor>
+            <dependent idx="5">Islam</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="7">anti-woman</governor>
+            <dependent idx="6">is</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="7">anti-woman</governor>
+            <dependent idx="9">anti-gay</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="7">anti-woman</governor>
+            <dependent idx="11">anti-</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">anti-woman</governor>
+            <dependent idx="12">American</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

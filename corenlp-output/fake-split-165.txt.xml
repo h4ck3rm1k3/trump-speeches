@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>The</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="2">
+            <word>U.S.</word>
+            <lemma>U.S.</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>8</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>LOCATION</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="3">
+            <word>has</word>
+            <lemma>have</lemma>
+            <CharacterOffsetBegin>9</CharacterOffsetBegin>
+            <CharacterOffsetEnd>12</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="4">
+            <word>become</word>
+            <lemma>become</lemma>
+            <CharacterOffsetBegin>13</CharacterOffsetBegin>
+            <CharacterOffsetEnd>19</CharacterOffsetEnd>
+            <POS>VBN</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="5">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>20</CharacterOffsetBegin>
+            <CharacterOffsetEnd>21</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="6">
+            <word>dumping</word>
+            <lemma>dump</lemma>
+            <CharacterOffsetBegin>22</CharacterOffsetBegin>
+            <CharacterOffsetEnd>29</CharacterOffsetEnd>
+            <POS>VBG</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="7">
+            <word>ground</word>
+            <lemma>ground</lemma>
+            <CharacterOffsetBegin>30</CharacterOffsetBegin>
+            <CharacterOffsetEnd>36</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="8">
+            <word>for</word>
+            <lemma>for</lemma>
+            <CharacterOffsetBegin>37</CharacterOffsetBegin>
+            <CharacterOffsetEnd>40</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="9">
+            <word>everybody</word>
+            <lemma>everybody</lemma>
+            <CharacterOffsetBegin>41</CharacterOffsetBegin>
+            <CharacterOffsetEnd>50</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="10">
+            <word>else</word>
+            <lemma>else</lemma>
+            <CharacterOffsetBegin>51</CharacterOffsetBegin>
+            <CharacterOffsetEnd>55</CharacterOffsetEnd>
+            <POS>RB</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="11">
+            <word>'s</word>
+            <lemma>'s</lemma>
+            <CharacterOffsetBegin>55</CharacterOffsetBegin>
+            <CharacterOffsetEnd>57</CharacterOffsetEnd>
+            <POS>POS</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="12">
+            <word>problems</word>
+            <lemma>problem</lemma>
+            <CharacterOffsetBegin>58</CharacterOffsetBegin>
+            <CharacterOffsetEnd>66</CharacterOffsetEnd>
+            <POS>NNS</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="13">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>66</CharacterOffsetBegin>
+            <CharacterOffsetEnd>67</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (DT The) (NNP U.S.)) (VP (VBZ has) (VP (VBN become) (NP (NP (DT a) (VBG dumping) (NN ground)) (PP (IN for) (NP (NP (NN everybody) (RB else) (POS 's)) (NNS problems)))))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="7">ground</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">U.S.</governor>
+            <dependent idx="1">The</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="7">ground</governor>
+            <dependent idx="2">U.S.</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="7">ground</governor>
+            <dependent idx="3">has</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="7">ground</governor>
+            <dependent idx="4">become</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">ground</governor>
+            <dependent idx="5">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">ground</governor>
+            <dependent idx="6">dumping</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="7">ground</governor>
+            <dependent idx="8">for</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="12">problems</governor>
+            <dependent idx="9">everybody</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="9">everybody</governor>
+            <dependent idx="10">else</dependent>
+          </dep>
+          <dep type="possessive">
+            <governor idx="9">everybody</governor>
+            <dependent idx="11">'s</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="8">for</governor>
+            <dependent idx="12">problems</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="7">ground</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">U.S.</governor>
+            <dependent idx="1">The</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="7">ground</governor>
+            <dependent idx="2">U.S.</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="7">ground</governor>
+            <dependent idx="3">has</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="7">ground</governor>
+            <dependent idx="4">become</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">ground</governor>
+            <dependent idx="5">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">ground</governor>
+            <dependent idx="6">dumping</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="12">problems</governor>
+            <dependent idx="9">everybody</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="9">everybody</governor>
+            <dependent idx="10">else</dependent>
+          </dep>
+          <dep type="prep_for">
+            <governor idx="7">ground</governor>
+            <dependent idx="12">problems</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="7">ground</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">U.S.</governor>
+            <dependent idx="1">The</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="7">ground</governor>
+            <dependent idx="2">U.S.</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="7">ground</governor>
+            <dependent idx="3">has</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="7">ground</governor>
+            <dependent idx="4">become</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">ground</governor>
+            <dependent idx="5">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">ground</governor>
+            <dependent idx="6">dumping</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="12">problems</governor>
+            <dependent idx="9">everybody</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="9">everybody</governor>
+            <dependent idx="10">else</dependent>
+          </dep>
+          <dep type="prep_for">
+            <governor idx="7">ground</governor>
+            <dependent idx="12">problems</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>
