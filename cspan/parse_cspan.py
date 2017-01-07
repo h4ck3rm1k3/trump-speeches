@@ -11,7 +11,7 @@ li = soup.find_all('li')
 talks =[]
 
 for x in li:
-    video = datetime = 'none'
+    prog = video = datetime = 'none'
     if x.has_attr('class'):
         c = x['class'][0]
         if c != 'onevid':
@@ -32,10 +32,17 @@ for x in li:
             for h3 in v.find_all('h3'):
                 title=h3.text
 
-        #time datetime
+        for s in x.find_all('span'):
+            c = s['class'][0]
+            #print c
+            if c=='excerpt':
+                prog = s['id'].replace('cc','')
+                # get the transcript:
+                #<span class="excerpt toLoad" id="cc463252">
+               
         
             #print(p.encode('utf-8'))
-        talks.append({'title': title, 'video': video, 'datetime':datetime})
+        talks.append({'title': title, 'video': video, 'datetime':datetime, 'prog_id': prog })
         
 #class="onevid">
 import json
