@@ -42,12 +42,8 @@ for x in li:
                
         
             #print(p.encode('utf-8'))
-        #talks.append({'title': title, 'video': video, 'datetime':datetime, 'prog_id': prog })
-        print """curl '{video}&action=getTranscript&transcriptType=cc&service-url=%2Fcommon%2Fservices%2FprogramSpeakers.php&progid={prog}&appearance-filter=&personSkip=0&ccSkip=0&transcriptSpeaker=&transcriptQuery=' -H 'pragma: no-cache' -H 'accept-encoding: gzip, deflate, sdch, br' -H 'x-requested-with: XMLHttpRequest' -H 'accept-language: en-US,en;q=0.8' -H 'user-agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36' -H 'accept: */*' -H 'cache-control: no-cache' -H 'authority: www.c-span.org' -H 'cookie: cspanvl_cc_font=inherit; cspanvl_cc_size=12; cspanvl_cc_foreopacity=1.0; cspanvl_cc_backopacity=1.0' -H 'referer: {video}' --compressed -o {filename}.html""".format(
-            video=video,
-            prog=prog,
-            filename=prog+title.replace(" ","_"))
+        talks.append({'title': title, 'video': video, 'datetime':datetime, 'prog_id': prog })
         
 #class="onevid">
-#import json
-#print json.dumps(talks,indent=4, sort_keys=True)
+import json
+print json.dumps(talks,indent=4, sort_keys=True)
